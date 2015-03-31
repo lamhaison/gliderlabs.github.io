@@ -7,7 +7,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/dots.png" />
   <link rel="stylesheet" type="text/css"
     href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed:400,700">
-  <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/global.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/default.css" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/syntax.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/global.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/default.css" rel="stylesheet" type="text/css" />
   <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/atom.xml" />
 </head>
 
@@ -40,13 +40,13 @@
         20,
         2015</p>
 
-      <p>When building Docker delivery pipelines, image size is extremely important for fast deploys. Unfortunately, it's too easy to make Docker images over 1GB in size. This is true even when you use many of the official images. It's especially true with many third-party base images. Dockerfile optimization is usually our first priority with clients.</p>
+      <p>When building Docker delivery pipelines, image size is extremely important for fast deploys. Unfortunately, it&rsquo;s too easy to make Docker images over 1GB in size. This is true even when you use many of the official images. It&rsquo;s especially true with many third-party base images. Dockerfile optimization is usually our first priority with clients.</p>
 
-<p><a href="https://www.alpinelinux.org/">Alpine Linux</a> has become our distribution of choice for minimal containers. Since discovering Alpine, we've been maintaining what's become a fairly popular Docker image for it called <a href="https://registry.hub.docker.com/u/gliderlabs/alpine/"><code>gliderlabs/alpine</code></a>.</p>
+<p><a href="https://www.alpinelinux.org/">Alpine Linux</a> has become our distribution of choice for minimal containers. Since discovering Alpine, we&rsquo;ve been maintaining what&rsquo;s become a fairly popular Docker image for it called <a href="https://registry.hub.docker.com/u/gliderlabs/alpine/"><code>gliderlabs/alpine</code></a>.</p>
 
-<p>We've been porting many of our open source containers like <a href="https://github.com/gliderlabs/logspout">logspout</a> and <a href="https://github.com/gliderlabs/registrator">registrator</a> to it. Although it's not ideal for every situation, we were still surprised it was not in the Docker standard library. So we began preparing ours to be submitted.</p>
+<p>We&rsquo;ve been porting many of our open source containers like <a href="https://github.com/gliderlabs/logspout">logspout</a> and <a href="https://github.com/gliderlabs/registrator">registrator</a> to it. Although it&rsquo;s not ideal for every situation, we were still surprised it was not in the Docker standard library. So we began preparing ours to be submitted.</p>
 
-<p>This week we're happy to announce that our image is now merged into the Docker library as an <a href="https://registry.hub.docker.com/_/alpine/">official image</a>. You can now build Alpine Linux based containers with simply <code>FROM alpine</code>.</p>
+<p>This week we&rsquo;re happy to announce that our image is now merged into the Docker library as an <a href="https://registry.hub.docker.com/_/alpine/">official image</a>. You can now build Alpine Linux based containers with simply <code>FROM alpine</code>.</p>
 
 <p>You can also continue to use <code>gliderlabs/alpine</code>. We use the same <a href="https://github.com/gliderlabs/docker-alpine">repository</a> and <a href="https://circleci.com/gh/gliderlabs/docker-alpine">open build process</a> to build <code>alpine</code> as <code>gliderlabs/alpine</code>. There are slight differences, but are effectively the same.</p>
 
@@ -72,7 +72,7 @@
 
   <div class="col-lg-3" id="sidebar">
     <!--img src="/images/jeffphoto.gif" id="photo" title="Jeff Lindsay" /-->
-    <p>Glider Labs is a modern devops consultancy and systems R&amp;D lab in Austin, Texas.</p>
+    <p>Glider Labs is a modern DevOps consultancy and systems R&amp;D lab in Austin, Texas.</p>
     <p>We work with clients to build modern service architectures, operations automation, and Docker delivery pipelines.</p>
     <p>We also build open source tools for the future of systems engineering, thanks to our partners and R&amp;D sponsors.</p>
     <p>Glider Labs is owned and operated by <a href="https://twitter.com/andyamok">Andy Shinn</a> and <a href="http://twitter.com/progrium">Jeff Lindsay</a>.</p>
