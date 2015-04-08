@@ -5,11 +5,45 @@
   <id>http://gliderlabs.com/blog</id>
   <link href="http://gliderlabs.com/blog"/>
   <link href="http://gliderlabs.com/blog/atom.xml" rel="self"/>
-  <updated>2015-03-31T15:07:00-05:00</updated>
+  <updated>2015-04-07T22:29:00-05:00</updated>
   <author>
     <name>Glider Labs</name>
     <email>team@gliderlabs.com</email>
   </author>
+  <entry>
+    <title>What have we been doing for 40 years?</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/"/>
+    <id>http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/</id>
+    <published>2015-04-07T22:29:00-05:00</published>
+    <updated>2015-04-07T22:41:18-05:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="/images/xerox_parc_1975.jpg" title="Xerox PARC, 1975 via Computer History Museum" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Desktop computing, graphical user interfaces, object-oriented programming, laser printing, Ethernet &amp;hellip; pillars of modern computing invented by only 25 people over 5 years at one place.&lt;/p&gt;
+
+&lt;p&gt;Unix and C &amp;hellip; the foundations of modern systems software initially developed by just 2 people over 3 years at one place.&lt;/p&gt;
+
+&lt;p&gt;Both happened in the early 1970s. &lt;em&gt;Over 40 years ago.&lt;/em&gt; What exactly have we been doing since?&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;We&amp;rsquo;ve been looking at photos of cats!&amp;rdquo; Okay, but really.&lt;/p&gt;
+
+&lt;p&gt;The startup world responds half-jokingly, and perhaps with an air of trademark Silicon Valley superiority, &amp;ldquo;Um, we&amp;rsquo;ve been innovating? You know, bringing all this to market and making it easier to use?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;They&amp;rsquo;re right! We&amp;rsquo;ve been innovating. That doesn&amp;rsquo;t sound so bad, does it? It&amp;rsquo;s not, but there is a big difference between invention and innovation. &lt;strong&gt;The problem is that innovation feeds on invention, and we&amp;rsquo;ve been feeding on the same inventions for 40 years.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Consumers are not complaining. In fact, they&amp;rsquo;re eating it up. Innovation is clearly where the money is and there&amp;rsquo;s plenty more. Now anybody in Silicon Valley that claims to be inventing is usually lying. Most are proud &lt;em&gt;not&lt;/em&gt; to be inventing.&lt;/p&gt;
+
+&lt;p&gt;Some say Google X is the new Xerox PARC. No way. Google X is about sexy commercial applications that are extremely risky. Xerox PARC was about researchers&amp;rsquo; independent curiosity and vision. One was set up for &amp;ldquo;pie in the sky&amp;rdquo; innovation, the other was set up for &amp;ldquo;blue sky&amp;rdquo; &lt;em&gt;invention&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, systems software and tooling naturally gets the more attention when allowed blue sky invention. Put a bunch of computer scientists together and let them do whatever they want. What are they going to do? Odds are they&amp;rsquo;ll design a new programming language. Exactly! I know that&amp;rsquo;s not particularly ideal, but it reveals the inherent bias. Compare that scenario with them being tasked to change the world.&lt;/p&gt;
+
+&lt;p&gt;Innovation is great. I&amp;rsquo;m not trying to devalue the work we&amp;rsquo;ve done since the 70s. However, this obsession with innovation clearly devalues invention. Moreover, looking at what are effectively the same tools after 40 years, my concern is that lack of invention stifles major progress in systems software.&lt;/p&gt;
+
+&lt;p&gt;The good news is that we&amp;rsquo;ve seen it could only take a handful of people in the right place with the right incentives to make another leap. It just most likely won&amp;rsquo;t be VC backed.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>New Logspout: Extensible Docker Logging</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/"/>
