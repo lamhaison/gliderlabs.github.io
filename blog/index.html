@@ -33,6 +33,73 @@
 <div class="row">
   <div class="col-lg-9">
     <article>
+      <h1><a href="/blog/2015/04/14/docker-events-explained/">Docker Events Explained</a></h1>
+      <p class="sub">Matt Good wrote this on
+        April
+        14,
+        2015</p>
+
+      <p>One of the fantastic features of the Docker platform is the events API. This enables tools like <a href="https://github.com/gliderlabs/registrator">Registrator</a> and <a href="https://github.com/gliderlabs/logspout">Logspout</a> to listen for container events like starting and stopping, then act on them.</p>
+
+<p>The <a href="https://docs.docker.com/reference/api/docker_remote_api_v1.17/#monitor-dockers-events">Docker API documentation</a> provides a list of the available events, but does not include much detail on what they mean and when they will occur. Since many of our tools depend on the events API, we&rsquo;ve put together a chart illustrating the events triggered throughout the lifecycle of a Docker container (as of Docker version 1.5 / API version 1.17):</p>
+
+<p><a href="/images/docker_events.png"><img width="650px" height="371px" alt="Docker events diagram" src="/images/docker_events.png" title="Container-related Docker events" /></a></p>
+
+<p>A few container-related events are not included in this illustration since they are not affected by container state:</p>
+
+<ul>
+<li><strong>export</strong> emitted by <code>docker export</code></li>
+<li><strong>exec_create</strong> emitted by <code>docker exec</code></li>
+<li><strong>exec_start</strong> also emitted by <code>docker exec</code> after <strong>exec_create</strong></li>
+</ul>
+
+<p>There are also several events not in this diagram that are related to Docker images rather than containers:</p>
+
+<ul>
+<li><strong>import</strong> emitted by <code>docker import</code></li>
+<li><strong>pull</strong> emitted by <code>docker pull</code></li>
+<li><strong>untag</strong> emitted by <code>docker rmi</code></li>
+<li><strong>delete</strong> emitted by <code>docker rmi</code></li>
+</ul>
+
+<p>Running <code>docker rmi</code> emits an <code>untag</code> event when removing an image tag name. The <code>rmi</code> command may also emit <code>delete</code> events for any image IDs deleted, either by deleting an image by ID directly, or deleting the last tag referring to it.</p>
+
+<p>We encourage more people to take advantage of the Docker events API, and we hope this diagram is useful. The Docker team is <a href="https://github.com/docker/docker/issues/12164">considering including this diagram in the documentation</a>.</p>
+
+
+    </article>
+
+    <a href="/blog/2015/04/14/docker-events-explained/#disqus_thread">Comments</a>
+    <br /><br />
+  </div>
+
+  <div class="col-lg-3" id="sidebar">
+    <!--img src="/images/jeffphoto.gif" id="photo" title="Jeff Lindsay" /-->
+    <p>Glider Labs is a modern DevOps consultancy and systems R&amp;D lab in Austin, Texas.</p>
+    <p>We work with clients to build modern service architectures, operations automation, and Docker delivery pipelines.</p>
+    <p>We also build open source tools for the future of systems engineering, thanks to our partners and R&amp;D sponsors.</p>
+    <p>Glider Labs is owned and operated by <a href="https://twitter.com/andyamok">Andy Shinn</a> and <a href="http://twitter.com/progrium">Jeff Lindsay</a>.</p>
+
+    <p class="social">
+    	<h5><a href="http://github.com/gliderlabs">
+    		<i class="fa fa-github fa-2x"></i>Github</a></h5>
+    	<h5><a href="http://twitter.com/gliderlabs">
+    		<i class="fa fa-twitter-square fa-2x"></i>Twitter</a></h5>
+    	<h5><a href="/blog/atom.xml">
+    		<i class="fa fa-rss-square fa-2x"></i>Feed</a></h5>
+    </p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section  class="alternate">
+<div class="container">
+<div class="row">
+  <div class="col-lg-9">
+    <article>
       <h1><a href="/blog/2015/04/08/what-have-we-been-doing-for-40-years/">What have we been doing for 40 years?</a></h1>
       <p class="sub">Jeff Lindsay wrote this on
         April
@@ -69,30 +136,10 @@
     <a href="/blog/2015/04/08/what-have-we-been-doing-for-40-years/#disqus_thread">Comments</a>
     <br /><br />
   </div>
-
-  <div class="col-lg-3" id="sidebar">
-    <!--img src="/images/jeffphoto.gif" id="photo" title="Jeff Lindsay" /-->
-    <p>Glider Labs is a modern DevOps consultancy and systems R&amp;D lab in Austin, Texas.</p>
-    <p>We work with clients to build modern service architectures, operations automation, and Docker delivery pipelines.</p>
-    <p>We also build open source tools for the future of systems engineering, thanks to our partners and R&amp;D sponsors.</p>
-    <p>Glider Labs is owned and operated by <a href="https://twitter.com/andyamok">Andy Shinn</a> and <a href="http://twitter.com/progrium">Jeff Lindsay</a>.</p>
-
-    <p class="social">
-    	<h5><a href="http://github.com/gliderlabs">
-    		<i class="fa fa-github fa-2x"></i>Github</a></h5>
-    	<h5><a href="http://twitter.com/gliderlabs">
-    		<i class="fa fa-twitter-square fa-2x"></i>Twitter</a></h5>
-    	<h5><a href="/blog/atom.xml">
-    		<i class="fa fa-rss-square fa-2x"></i>Feed</a></h5>
-    </p>
-</div>
-
 </div>
 </div>
 </section>
-
-
-<section  class="alternate">
+<section >
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -197,7 +244,7 @@
 </div>
 </div>
 </section>
-<section >
+<section  class="alternate">
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -247,7 +294,7 @@
 </div>
 </div>
 </section>
-<section  class="alternate">
+<section >
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -279,54 +326,6 @@
 </div>
 </div>
 </section>
-<section >
-<div class="container">
-<div class="row">
-  <div class="col-lg-9">
-    <article>
-      <h1><a href="/blog/2015/03/04/a-pattern-emerges/">A Pattern Emerges</a></h1>
-      <p class="sub">Jeff Lindsay wrote this on
-        March
-        4,
-        2015</p>
-
-      <p>It may not be obvious, but Glider Labs is named after the glider pattern in <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway&rsquo;s Life</a>. If you&rsquo;re not familiar, Conway&rsquo;s Life is a popular cellular automaton that exhibits how simple rules can lead to complex behavior.</p>
-
-<p>Specifically, Conway&rsquo;s Life is a simple simulation with cells that can either be on or off at each step. Every step, four simple rules are executed dealing with the state of a cell&rsquo;s neighbors. From this, you get what seems to be a disproportionate amount of rich, dynamic behavior.</p>
-
-<p><img alt="Conway's Life" src="http://media.giphy.com/media/8Ar9S6zEFjJiU/giphy.gif" /></p>
-
-<p>Key takeaways from Conway&rsquo;s Life are about complexity and emergence. A well constructed initial pattern of only a few cells in Life can grow into an entire ecosystem of interesting patterns.</p>
-
-<p>A minor change to the initial pattern has a tremendous effect on how the pattern evolves. While the system is deterministic, the dynamics of it are not terribly intuitive. You rarely know how a change will cascade through the lifespan of a Life simulation unless you built it up from scratch yourself.</p>
-
-<p>Murphy&rsquo;s law is an unavoidable truth in operations and reliability engineering. Root cause analysis usually proves major system failures not to be random, but an unexpected series of smaller, cascading failures. This is the nature of failure and predictability in complex systems, and it&rsquo;s fascinating how well this is captured in models like Conway&rsquo;s Life.</p>
-
-<p><img alt="Complex Life system" src="http://media.giphy.com/media/tXlpbXfu7e2Pu/giphy.gif" /></p>
-
-<p>Studying complexity and emergence in Conway&rsquo;s Life also reveals useful truths in designing everyday software systems. Although there are infinite possible simulations in Life, you quickly notice that all complex patterns are made up of just a few simple patterns that keep recurring.</p>
-
-<p>These useful patterns can be arranged in countless ways to compose more complex useful patterns. Complex patterns can then be combined as modules to make even more complex patterns. Sound familiar?</p>
-
-<p>In case these patterns seem pointless, it may be worth mentioning that Conway&rsquo;s Life is <a href="http://jeremykun.com/2011/06/30/turing-machines-and-conways-dreams/">Turing complete</a>. As such, you can implement <a href="https://www.youtube.com/watch?v=xP5-iIeKXE8">Conway&rsquo;s Life in Conway&rsquo;s Life</a>.</p>
-
-<p>This only scratches the surface of what can be gleaned from studying Conway&rsquo;s Life. There are plenty of ways to play with Life simulations, including implementing one yourself. Here&rsquo;s a <a href="http://play.golang.org/p/nr2wehptjW">runnable Go implementation</a> in about 100 lines.</p>
-
-<p>The glider pattern we reference is the smallest traveling pattern in Life, and one of the most useful building blocks. It&rsquo;s often used as a symbol of Conway&rsquo;s Life, but has also been adopted to <a href="http://www.catb.org/hacker-emblem/faqs.html">represent the hacker ethic</a>. This is a convenient symbolic addition for us.</p>
-
-<p>All of this gets at how we think about problems, design systems, and captures the realities of our field. This is why we are Glider Labs.</p>
-
-<p><img alt="Glider pattern" src="http://media.giphy.com/media/wErVWADqta2oE/giphy.gif" /></p>
-
-
-    </article>
-
-    <a href="/blog/2015/03/04/a-pattern-emerges/#disqus_thread">Comments</a>
-    <br /><br />
-  </div>
-</div>
-</div>
-</section>
 
 
 <section class="alternate">
@@ -335,8 +334,8 @@
     <div class="col-lg-9">
       <ul class="pager article">
 
-        <li class="previous disabled">
-          <a href="#">&larr; Older</a>
+        <li class="previous">
+          <a href="/blog/page2/">&larr; Older</a>
         </li>
 
         <li class="next disabled">
