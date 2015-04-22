@@ -5,17 +5,35 @@
   <id>http://gliderlabs.com/blog</id>
   <link href="http://gliderlabs.com/blog"/>
   <link href="http://gliderlabs.com/blog/atom.xml" rel="self"/>
-  <updated>2015-04-14T18:48:00-05:00</updated>
+  <updated>2015-04-23T01:23:00+02:00</updated>
   <author>
     <name>Glider Labs</name>
     <email>team@gliderlabs.com</email>
   </author>
   <entry>
+    <title>Weave Sponsors Glider Labs Service Discovery Projects</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/"/>
+    <id>http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/</id>
+    <published>2015-04-23T01:23:00+02:00</published>
+    <updated>2015-04-23T01:23:32+02:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;Today we&amp;rsquo;re happy to introduce &lt;a href="http://weave.works/"&gt;Weaveworks&lt;/a&gt;, authors of &lt;a href="https://github.com/weaveworks/weave"&gt;Weave&lt;/a&gt;, as our newest sponsor. This sponsorship will most immediately support development and increased releases of &lt;a href="https://github.com/gliderlabs/registrator"&gt;Registrator&lt;/a&gt;, our Docker service discovery bridge. It also enables us to release a few new projects in this space over the next couple months.&lt;/p&gt;
+
+&lt;p&gt;This six month sponsorship not only supports our work, but the joint effort across vendors to help Docker become more extensible. Along with Weaveworks, we&amp;rsquo;re among a few working with Docker to help design a plugin system, initially allowing basic extension points around networking and volumes.&lt;/p&gt;
+
+&lt;p&gt;It also means we&amp;rsquo;ll be exploring integration with various Weave components, such as Registrator with &lt;a href="https://github.com/weaveworks/weave/tree/master/weavedns"&gt;WeaveDNS&lt;/a&gt;. We&amp;rsquo;ll also be sharing some of the use cases with current and future Weave services for Docker software networking.&lt;/p&gt;
+
+&lt;p&gt;Besides our consulting and system integration services, Glider Labs is an independent systems R&amp;amp;D lab. Our open source work towards unraveling the &lt;a href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"&gt;modern systems mess&lt;/a&gt; is made possible by sponsorships like this. If your organization is interested in supporting our work the way Weaveworks has, please &lt;a href="mailto:team+sponsor@gliderlabs.com"&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>Docker Events Explained</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/14/docker-events-explained/"/>
     <id>http://gliderlabs.com/blog/2015/04/14/docker-events-explained/</id>
-    <published>2015-04-14T18:48:00-05:00</published>
-    <updated>2015-04-14T19:02:49-05:00</updated>
+    <published>2015-04-15T01:48:00+02:00</published>
+    <updated>2015-04-15T02:02:49+02:00</updated>
     <author>
       <name>Matt Good</name>
     </author>
@@ -51,8 +69,8 @@
     <title>What have we been doing for 40 years?</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/"/>
     <id>http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/</id>
-    <published>2015-04-07T22:29:00-05:00</published>
-    <updated>2015-04-08T09:08:28-05:00</updated>
+    <published>2015-04-08T05:29:00+02:00</published>
+    <updated>2015-04-08T16:08:28+02:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -85,8 +103,8 @@
     <title>New Logspout: Extensible Docker Logging</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/"/>
     <id>http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/</id>
-    <published>2015-03-31T15:07:00-05:00</published>
-    <updated>2015-03-31T15:24:52-05:00</updated>
+    <published>2015-03-31T22:07:00+02:00</published>
+    <updated>2015-03-31T22:24:52+02:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -180,8 +198,8 @@
     <title>The Modern Systems Software Mess</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"/>
     <id>http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/</id>
-    <published>2015-03-24T18:16:00-05:00</published>
-    <updated>2015-03-24T18:16:57-05:00</updated>
+    <published>2015-03-25T00:16:00+01:00</published>
+    <updated>2015-03-25T00:16:57+01:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -220,8 +238,8 @@
     <title>Our minimal Alpine Linux image joins Docker official images</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/20/our-minimal-alpine-linux-image-joins-docker-official-images/"/>
     <id>http://gliderlabs.com/blog/2015/03/20/our-minimal-alpine-linux-image-joins-docker-official-images/</id>
-    <published>2015-03-20T18:32:00-05:00</published>
-    <updated>2015-03-24T17:59:38-05:00</updated>
+    <published>2015-03-21T00:32:00+01:00</published>
+    <updated>2015-03-24T23:59:38+01:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -236,44 +254,6 @@
 &lt;p&gt;You can also continue to use &lt;code&gt;gliderlabs/alpine&lt;/code&gt;. We use the same &lt;a href="https://github.com/gliderlabs/docker-alpine"&gt;repository&lt;/a&gt; and &lt;a href="https://circleci.com/gh/gliderlabs/docker-alpine"&gt;open build process&lt;/a&gt; to build &lt;code&gt;alpine&lt;/code&gt; as &lt;code&gt;gliderlabs/alpine&lt;/code&gt;. There are slight differences, but are effectively the same.&lt;/p&gt;
 
 &lt;p&gt;Whichever one you use, we hope you enjoy using Alpine Linux with Docker!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>A Pattern Emerges</title>
-    <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/04/a-pattern-emerges/"/>
-    <id>http://gliderlabs.com/blog/2015/03/04/a-pattern-emerges/</id>
-    <published>2015-03-04T12:29:00-06:00</published>
-    <updated>2015-03-24T17:59:38-05:00</updated>
-    <author>
-      <name>Jeff Lindsay</name>
-    </author>
-    <content type="html">&lt;p&gt;It may not be obvious, but Glider Labs is named after the glider pattern in &lt;a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"&gt;Conway&amp;rsquo;s Life&lt;/a&gt;. If you&amp;rsquo;re not familiar, Conway&amp;rsquo;s Life is a popular cellular automaton that exhibits how simple rules can lead to complex behavior.&lt;/p&gt;
-
-&lt;p&gt;Specifically, Conway&amp;rsquo;s Life is a simple simulation with cells that can either be on or off at each step. Every step, four simple rules are executed dealing with the state of a cell&amp;rsquo;s neighbors. From this, you get what seems to be a disproportionate amount of rich, dynamic behavior.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Conway's Life" src="http://media.giphy.com/media/8Ar9S6zEFjJiU/giphy.gif" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Key takeaways from Conway&amp;rsquo;s Life are about complexity and emergence. A well constructed initial pattern of only a few cells in Life can grow into an entire ecosystem of interesting patterns.&lt;/p&gt;
-
-&lt;p&gt;A minor change to the initial pattern has a tremendous effect on how the pattern evolves. While the system is deterministic, the dynamics of it are not terribly intuitive. You rarely know how a change will cascade through the lifespan of a Life simulation unless you built it up from scratch yourself.&lt;/p&gt;
-
-&lt;p&gt;Murphy&amp;rsquo;s law is an unavoidable truth in operations and reliability engineering. Root cause analysis usually proves major system failures not to be random, but an unexpected series of smaller, cascading failures. This is the nature of failure and predictability in complex systems, and it&amp;rsquo;s fascinating how well this is captured in models like Conway&amp;rsquo;s Life.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Complex Life system" src="http://media.giphy.com/media/tXlpbXfu7e2Pu/giphy.gif" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Studying complexity and emergence in Conway&amp;rsquo;s Life also reveals useful truths in designing everyday software systems. Although there are infinite possible simulations in Life, you quickly notice that all complex patterns are made up of just a few simple patterns that keep recurring.&lt;/p&gt;
-
-&lt;p&gt;These useful patterns can be arranged in countless ways to compose more complex useful patterns. Complex patterns can then be combined as modules to make even more complex patterns. Sound familiar?&lt;/p&gt;
-
-&lt;p&gt;In case these patterns seem pointless, it may be worth mentioning that Conway&amp;rsquo;s Life is &lt;a href="http://jeremykun.com/2011/06/30/turing-machines-and-conways-dreams/"&gt;Turing complete&lt;/a&gt;. As such, you can implement &lt;a href="https://www.youtube.com/watch?v=xP5-iIeKXE8"&gt;Conway&amp;rsquo;s Life in Conway&amp;rsquo;s Life&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This only scratches the surface of what can be gleaned from studying Conway&amp;rsquo;s Life. There are plenty of ways to play with Life simulations, including implementing one yourself. Here&amp;rsquo;s a &lt;a href="http://play.golang.org/p/nr2wehptjW"&gt;runnable Go implementation&lt;/a&gt; in about 100 lines.&lt;/p&gt;
-
-&lt;p&gt;The glider pattern we reference is the smallest traveling pattern in Life, and one of the most useful building blocks. It&amp;rsquo;s often used as a symbol of Conway&amp;rsquo;s Life, but has also been adopted to &lt;a href="http://www.catb.org/hacker-emblem/faqs.html"&gt;represent the hacker ethic&lt;/a&gt;. This is a convenient symbolic addition for us.&lt;/p&gt;
-
-&lt;p&gt;All of this gets at how we think about problems, design systems, and captures the realities of our field. This is why we are Glider Labs.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Glider pattern" src="http://media.giphy.com/media/wErVWADqta2oE/giphy.gif" /&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
