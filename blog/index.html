@@ -33,24 +33,66 @@
 <div class="row">
   <div class="col-lg-9">
     <article>
-      <h1><a href="/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/">Weave Sponsors Glider Labs Service Discovery Projects</a></h1>
+      <h1><a href="/blog/2015/04/29/build-simple-systems-to-build-good-systems/">Build simple systems to build good systems</a></h1>
       <p class="sub">Jeff Lindsay wrote this on
         April
-        22,
+        29,
         2015</p>
 
-      <p>Today we&rsquo;re happy to introduce <a href="http://weave.works/">Weaveworks</a>, authors of <a href="https://github.com/weaveworks/weave">Weave</a>, as our newest sponsor. This sponsorship will most immediately support development and increased releases of <a href="https://github.com/gliderlabs/registrator">Registrator</a>, our Docker service discovery bridge. It also enables us to release a few new projects in this space over the next couple months.</p>
+      <p>We often talk about complexity in software systems, but for some reason we don&rsquo;t seem to talk enough about simplicity. I was quite happy to find that Rich Hickey&rsquo;s keynote at Strange Loop 2011 focused on simplicity.</p>
 
-<p>This six month sponsorship not only supports our work, but the joint effort across vendors to help Docker become more extensible. Along with Weaveworks, we&rsquo;re among a few working with Docker to help design a plugin system, initially allowing basic extension points around networking and volumes.</p>
+<p><strong><a href="http://www.infoq.com/presentations/Simple-Made-Easy">Rich Hickey - Simple Made Easy on InfoQ</a></strong> (<a href="https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md">transcript</a>)</p>
 
-<p>It also means we&rsquo;ll be exploring integration with various Weave components, such as Registrator with <a href="https://github.com/weaveworks/weave/tree/master/weavedns">WeaveDNS</a>. We&rsquo;ll also be sharing some of the use cases with current and future Weave services for Docker software networking.</p>
+<p>Simple Made Easy is about Hickey&rsquo;s exploration of what simple really means, what it doesn&rsquo;t mean, and how that can be used as a guide towards simplicity in software.</p>
 
-<p>Besides our consulting and system integration services, Glider Labs is an independent systems R&amp;D lab. Our open source work towards unraveling the <a href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/">modern systems mess</a> is made possible by sponsorships like this. If your organization is interested in supporting our work the way Weaveworks has, please <a href="mailto:team+sponsor@gliderlabs.com">let us know</a>.</p>
+<p>Most experienced programmers know that simplicity is difficult to achieve. Perhaps part of the reason for this is that simplicity seems to be somewhat subjective. Here, Hickey explains a framework to more objectively identify how simple a design is.</p>
+
+<p><center><img alt="Simple as not interleaved" src="/images/simple_made_easy.jpg" /></center></p>
+
+<p>He starts with the etymology of simple. It describes a meaning around the amount of <em>interleaving</em>. What&rsquo;s interesting is that this interpretation of simplicity is not about the number of elements, just how interleaved they are.</p>
+
+<blockquote>
+<p>Simplicity is not about counting. I&rsquo;d rather have more things hanging nice, straight down, not twisted together, than just a couple of things tied in a knot.</p>
+</blockquote>
+
+<p>To help with this particular meaning of simple, he shares an archaic word that is specifically the opposite of this:</p>
+
+<blockquote>
+<p><strong>complect</strong> - to interleave, entwine, or braid</p>
+</blockquote>
+
+<p>By using complecting as our primary anti-pattern, we can more easily see a path towards simplicity than the vague notion of &ldquo;avoiding complexity.&rdquo;</p>
+
+<p>He also identifies that simple is not the same as easy, despite many using those words interchangeably. While easy is ultimately relative, simple in these terms has some objectivity to it. We can ask, &ldquo;How much interleaving is there?&rdquo;</p>
+
+<p>The talk goes over a number tactical approaches to simplicity by not complecting, but there&rsquo;s also wisdom shared around the value of simplicity.</p>
+
+<p>Perhaps the biggest issue with complexity is that it undermines understanding your software. He makes the point that understanding is the real key to making changes quickly in software.</p>
+
+<p>Conventional wisdom says testing is how we can make changes quickly. While there is clearly value in testing, the popular notion that test coverage above all else is what you need to move quickly is challenged by Hickey. He calls it guardrail programming.</p>
+
+<blockquote>
+<p>What&rsquo;s true of every bug found in the field? It passed all the tests. So now what do you do? I think we&rsquo;re in this world I&rsquo;d like to call guardrail programming. It&rsquo;s really sad. We&rsquo;re like, &ldquo;I can make change because I have tests!&rdquo; Who does that? Who drives their car around banging against the guardrail saying, &ldquo;Whoa! I&rsquo;m glad I&rsquo;ve got these guardrails because I&rsquo;d never make it to the show on time.&rdquo;</p>
+</blockquote>
+
+<p>Once you find a bug, tests only tell you what the problem isn&rsquo;t. You have to reason about the program, debug it, try things. If the program is complex, this is harder to do. The only way to improve this process is if the program is simple.</p>
+
+<blockquote>
+<p>Compared to the complexity we can create, we&rsquo;re all statistically at the same point in our ability to understand it, which is not very good. So we&rsquo;re going to have to bring things towards us.</p>
+</blockquote>
+
+<p>There&rsquo;s definitely a lot of great insight in this talk. As a final point, let&rsquo;s remember that simplicity doesn&rsquo;t just happen. It&rsquo;s not the default mode of software engineering.</p>
+
+<blockquote>
+<p>Simplicity is a choice. It requires constant vigilance.</p>
+</blockquote>
+
+<p>We need more thinking around simplicity. If you know of other great talks on simplicity, in software or otherwise, please share in the comments.</p>
 
 
     </article>
 
-    <a href="/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/#disqus_thread">Comments</a>
+    <a href="/blog/2015/04/29/build-simple-systems-to-build-good-systems/#disqus_thread">Comments</a>
     <br /><br />
   </div>
 
@@ -77,6 +119,34 @@
 
 
 <section  class="alternate">
+<div class="container">
+<div class="row">
+  <div class="col-lg-9">
+    <article>
+      <h1><a href="/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/">Weave Sponsors Glider Labs Service Discovery Projects</a></h1>
+      <p class="sub">Jeff Lindsay wrote this on
+        April
+        22,
+        2015</p>
+
+      <p>Today we&rsquo;re happy to introduce <a href="http://weave.works/">Weaveworks</a>, authors of <a href="https://github.com/weaveworks/weave">Weave</a>, as our newest sponsor. This sponsorship will most immediately support development and increased releases of <a href="https://github.com/gliderlabs/registrator">Registrator</a>, our Docker service discovery bridge. It also enables us to release a few new projects in this space over the next couple months.</p>
+
+<p>This six month sponsorship not only supports our work, but the joint effort across vendors to help Docker become more extensible. Along with Weaveworks, we&rsquo;re among a few working with Docker to help design a plugin system, initially allowing basic extension points around networking and volumes.</p>
+
+<p>It also means we&rsquo;ll be exploring integration with various Weave components, such as Registrator with <a href="https://github.com/weaveworks/weave/tree/master/weavedns">WeaveDNS</a>. We&rsquo;ll also be sharing some of the use cases with current and future Weave services for Docker software networking.</p>
+
+<p>Besides our consulting and system integration services, Glider Labs is an independent systems R&amp;D lab. Our open source work towards unraveling the <a href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/">modern systems mess</a> is made possible by sponsorships like this. If your organization is interested in supporting our work the way Weaveworks has, please <a href="mailto:team+sponsor@gliderlabs.com">let us know</a>.</p>
+
+
+    </article>
+
+    <a href="/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/#disqus_thread">Comments</a>
+    <br /><br />
+  </div>
+</div>
+</div>
+</section>
+<section >
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -123,7 +193,7 @@
 </div>
 </div>
 </section>
-<section >
+<section  class="alternate">
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -167,7 +237,7 @@
 </div>
 </div>
 </section>
-<section  class="alternate">
+<section >
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -267,56 +337,6 @@
     </article>
 
     <a href="/blog/2015/03/31/new-logspout-extensible-docker-logging/#disqus_thread">Comments</a>
-    <br /><br />
-  </div>
-</div>
-</div>
-</section>
-<section >
-<div class="container">
-<div class="row">
-  <div class="col-lg-9">
-    <article>
-      <h1><a href="/blog/2015/03/24/the-modern-systems-software-mess/">The Modern Systems Software Mess</a></h1>
-      <p class="sub">Jeff Lindsay wrote this on
-        March
-        24,
-        2015</p>
-
-      <p>In August 2000, while Rob Pike was still at Bell Labs and before he co-developed Go, he gave a talk called <a href="http://doc.cat-v.org/bell_labs/utah2000/">Systems Software Research is Irrelevant</a>. Today the situation is perhaps not as dire. At the very least, his examples are noticeably dated. However, many of his points remain true and point at systemic roadblocks to better systems software.</p>
-
-<p>His main point was that academic research around systems software had lost the influence on industry it once had. The rise of Google and its academically inclined engineering culture is maybe the biggest shift since this talk. Google has applied and published great research on software systems, particularly around distributed systems.</p>
-
-<p>That said, there are points from this talk that resonate with and inspire people like us trying to fill the void of modern systems R&amp;D.</p>
-
-<blockquote>
-<p>Startups are too focused on short time scale and practical results to try new things.</p>
-</blockquote>
-
-<p>At first I thought, &ldquo;That&rsquo;s not true!&rdquo; Then I realized what startups really do is often take the opportunity to apply <em>recent</em> ideas (ie Docker), but rarely do they (nor should they) try to <em>invent</em> novel approaches to systems.</p>
-
-<p>Instead, invention most often comes from organizations large enough to necessitate invention for their particular problem and scale, or startup vendors that are trying to sell a shiny new solution. This has yielded great papers, best practices, and open source software, but in all cases these are independent solutions to specific problems.</p>
-
-<blockquote>
-<p>Go back to thinking about and <em>building systems</em>. Narrowness is irrelevant; breadth is relevant: it&rsquo;s the essence of <em>system</em>.</p>
-</blockquote>
-
-<p>No one vendor will provide a solution for your entire system. There are virtualization vendors, CI vendors, source control vendors, operating system vendors, configuration management vendors, database vendors, container management vendors, and on and on.</p>
-
-<p>Whether these are hosted services or commercially supported open source software, none of them will ever solve (read: own) the system. No matter what they think or what they tell you.</p>
-
-<p>Instead, we collectively share best practices and loosely converge on similar system architectures. But who has the incentive and business platform that can support <em>systemic</em> innovation?</p>
-
-<blockquote>
-<p>There has been much talk about component architectures but only one true success: Unix pipes. It should be possible to build interactive and distributed applications from piece parts.</p>
-</blockquote>
-
-<p>If there is a guiding hypothesis behind the Glider Labs approach to building systems, this is it. Rarely does this get a chance to be fully explored.</p>
-
-
-    </article>
-
-    <a href="/blog/2015/03/24/the-modern-systems-software-mess/#disqus_thread">Comments</a>
     <br /><br />
   </div>
 </div>

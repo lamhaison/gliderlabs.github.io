@@ -5,17 +5,77 @@
   <id>http://gliderlabs.com/blog</id>
   <link href="http://gliderlabs.com/blog"/>
   <link href="http://gliderlabs.com/blog/atom.xml" rel="self"/>
-  <updated>2015-04-23T01:23:00+02:00</updated>
+  <updated>2015-04-29T06:18:00-05:00</updated>
   <author>
     <name>Glider Labs</name>
     <email>team@gliderlabs.com</email>
   </author>
   <entry>
+    <title>Build simple systems to build good systems</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/29/build-simple-systems-to-build-good-systems/"/>
+    <id>http://gliderlabs.com/blog/2015/04/29/build-simple-systems-to-build-good-systems/</id>
+    <published>2015-04-29T06:18:00-05:00</published>
+    <updated>2015-04-29T06:23:50-05:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;We often talk about complexity in software systems, but for some reason we don&amp;rsquo;t seem to talk enough about simplicity. I was quite happy to find that Rich Hickey&amp;rsquo;s keynote at Strange Loop 2011 focused on simplicity.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://www.infoq.com/presentations/Simple-Made-Easy"&gt;Rich Hickey - Simple Made Easy on InfoQ&lt;/a&gt;&lt;/strong&gt; (&lt;a href="https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md"&gt;transcript&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Simple Made Easy is about Hickey&amp;rsquo;s exploration of what simple really means, what it doesn&amp;rsquo;t mean, and how that can be used as a guide towards simplicity in software.&lt;/p&gt;
+
+&lt;p&gt;Most experienced programmers know that simplicity is difficult to achieve. Perhaps part of the reason for this is that simplicity seems to be somewhat subjective. Here, Hickey explains a framework to more objectively identify how simple a design is.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img alt="Simple as not interleaved" src="/images/simple_made_easy.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;He starts with the etymology of simple. It describes a meaning around the amount of &lt;em&gt;interleaving&lt;/em&gt;. What&amp;rsquo;s interesting is that this interpretation of simplicity is not about the number of elements, just how interleaved they are.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Simplicity is not about counting. I&amp;rsquo;d rather have more things hanging nice, straight down, not twisted together, than just a couple of things tied in a knot.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To help with this particular meaning of simple, he shares an archaic word that is specifically the opposite of this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;complect&lt;/strong&gt; - to interleave, entwine, or braid&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By using complecting as our primary anti-pattern, we can more easily see a path towards simplicity than the vague notion of &amp;ldquo;avoiding complexity.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;He also identifies that simple is not the same as easy, despite many using those words interchangeably. While easy is ultimately relative, simple in these terms has some objectivity to it. We can ask, &amp;ldquo;How much interleaving is there?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;The talk goes over a number tactical approaches to simplicity by not complecting, but there&amp;rsquo;s also wisdom shared around the value of simplicity.&lt;/p&gt;
+
+&lt;p&gt;Perhaps the biggest issue with complexity is that it undermines understanding your software. He makes the point that understanding is the real key to making changes quickly in software.&lt;/p&gt;
+
+&lt;p&gt;Conventional wisdom says testing is how we can make changes quickly. While there is clearly value in testing, the popular notion that test coverage above all else is what you need to move quickly is challenged by Hickey. He calls it guardrail programming.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What&amp;rsquo;s true of every bug found in the field? It passed all the tests. So now what do you do? I think we&amp;rsquo;re in this world I&amp;rsquo;d like to call guardrail programming. It&amp;rsquo;s really sad. We&amp;rsquo;re like, &amp;ldquo;I can make change because I have tests!&amp;rdquo; Who does that? Who drives their car around banging against the guardrail saying, &amp;ldquo;Whoa! I&amp;rsquo;m glad I&amp;rsquo;ve got these guardrails because I&amp;rsquo;d never make it to the show on time.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Once you find a bug, tests only tell you what the problem isn&amp;rsquo;t. You have to reason about the program, debug it, try things. If the program is complex, this is harder to do. The only way to improve this process is if the program is simple.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Compared to the complexity we can create, we&amp;rsquo;re all statistically at the same point in our ability to understand it, which is not very good. So we&amp;rsquo;re going to have to bring things towards us.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There&amp;rsquo;s definitely a lot of great insight in this talk. As a final point, let&amp;rsquo;s remember that simplicity doesn&amp;rsquo;t just happen. It&amp;rsquo;s not the default mode of software engineering.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Simplicity is a choice. It requires constant vigilance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We need more thinking around simplicity. If you know of other great talks on simplicity, in software or otherwise, please share in the comments.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>Weave Sponsors Glider Labs Service Discovery Projects</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/"/>
     <id>http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/</id>
-    <published>2015-04-23T01:23:00+02:00</published>
-    <updated>2015-04-23T01:23:32+02:00</updated>
+    <published>2015-04-22T18:23:00-05:00</published>
+    <updated>2015-04-22T18:23:32-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -32,8 +92,8 @@
     <title>Docker Events Explained</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/14/docker-events-explained/"/>
     <id>http://gliderlabs.com/blog/2015/04/14/docker-events-explained/</id>
-    <published>2015-04-15T01:48:00+02:00</published>
-    <updated>2015-04-15T02:02:49+02:00</updated>
+    <published>2015-04-14T18:48:00-05:00</published>
+    <updated>2015-04-14T19:02:49-05:00</updated>
     <author>
       <name>Matt Good</name>
     </author>
@@ -69,8 +129,8 @@
     <title>What have we been doing for 40 years?</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/"/>
     <id>http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/</id>
-    <published>2015-04-08T05:29:00+02:00</published>
-    <updated>2015-04-08T16:08:28+02:00</updated>
+    <published>2015-04-07T22:29:00-05:00</published>
+    <updated>2015-04-08T09:08:28-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -103,8 +163,8 @@
     <title>New Logspout: Extensible Docker Logging</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/"/>
     <id>http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/</id>
-    <published>2015-03-31T22:07:00+02:00</published>
-    <updated>2015-03-31T22:24:52+02:00</updated>
+    <published>2015-03-31T15:07:00-05:00</published>
+    <updated>2015-03-31T15:24:52-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -198,8 +258,8 @@
     <title>The Modern Systems Software Mess</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"/>
     <id>http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/</id>
-    <published>2015-03-25T00:16:00+01:00</published>
-    <updated>2015-03-25T00:16:57+01:00</updated>
+    <published>2015-03-24T18:16:00-05:00</published>
+    <updated>2015-03-24T18:16:57-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -232,28 +292,6 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;If there is a guiding hypothesis behind the Glider Labs approach to building systems, this is it. Rarely does this get a chance to be fully explored.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Our minimal Alpine Linux image joins Docker official images</title>
-    <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/20/our-minimal-alpine-linux-image-joins-docker-official-images/"/>
-    <id>http://gliderlabs.com/blog/2015/03/20/our-minimal-alpine-linux-image-joins-docker-official-images/</id>
-    <published>2015-03-21T00:32:00+01:00</published>
-    <updated>2015-03-24T23:59:38+01:00</updated>
-    <author>
-      <name>Jeff Lindsay</name>
-    </author>
-    <content type="html">&lt;p&gt;When building Docker delivery pipelines, image size is extremely important for fast deploys. Unfortunately, it&amp;rsquo;s too easy to make Docker images over 1GB in size. This is true even when you use many of the official images. It&amp;rsquo;s especially true with many third-party base images. Dockerfile optimization is usually our first priority with clients.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://www.alpinelinux.org/"&gt;Alpine Linux&lt;/a&gt; has become our distribution of choice for minimal containers. Since discovering Alpine, we&amp;rsquo;ve been maintaining what&amp;rsquo;s become a fairly popular Docker image for it called &lt;a href="https://registry.hub.docker.com/u/gliderlabs/alpine/"&gt;&lt;code&gt;gliderlabs/alpine&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;ve been porting many of our open source containers like &lt;a href="https://github.com/gliderlabs/logspout"&gt;logspout&lt;/a&gt; and &lt;a href="https://github.com/gliderlabs/registrator"&gt;registrator&lt;/a&gt; to it. Although it&amp;rsquo;s not ideal for every situation, we were still surprised it was not in the Docker standard library. So we began preparing ours to be submitted.&lt;/p&gt;
-
-&lt;p&gt;This week we&amp;rsquo;re happy to announce that our image is now merged into the Docker library as an &lt;a href="https://registry.hub.docker.com/_/alpine/"&gt;official image&lt;/a&gt;. You can now build Alpine Linux based containers with simply &lt;code&gt;FROM alpine&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can also continue to use &lt;code&gt;gliderlabs/alpine&lt;/code&gt;. We use the same &lt;a href="https://github.com/gliderlabs/docker-alpine"&gt;repository&lt;/a&gt; and &lt;a href="https://circleci.com/gh/gliderlabs/docker-alpine"&gt;open build process&lt;/a&gt; to build &lt;code&gt;alpine&lt;/code&gt; as &lt;code&gt;gliderlabs/alpine&lt;/code&gt;. There are slight differences, but are effectively the same.&lt;/p&gt;
-
-&lt;p&gt;Whichever one you use, we hope you enjoy using Alpine Linux with Docker!&lt;/p&gt;
 </content>
   </entry>
 </feed>
