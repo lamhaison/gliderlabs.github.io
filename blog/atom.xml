@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Glider Labs</title>
+  <subtitle>Ultra modern DevOps</subtitle>
+  <id>http://gliderlabs.com/blog</id>
+  <link href="http://gliderlabs.com/blog"/>
+  <link href="http://gliderlabs.com/blog/atom.xml" rel="self"/>
+  <updated>2015-04-29T04:18:00-07:00</updated>
+  <author>
+    <name>Glider Labs</name>
+    <email>team@gliderlabs.com</email>
+  </author>
+  <entry>
+    <title>Build simple systems to build good systems</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/29/build-simple-systems-to-build-good-systems/"/>
+    <id>http://gliderlabs.com/blog/2015/04/29/build-simple-systems-to-build-good-systems/</id>
+    <published>2015-04-29T04:18:00-07:00</published>
+    <updated>2015-06-19T10:57:23-07:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;We often talk about complexity in software systems, but for some reason we don&amp;rsquo;t seem to talk enough about simplicity. I was quite happy to find that Rich Hickey&amp;rsquo;s keynote at Strange Loop 2011 focused on simplicity.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://www.infoq.com/presentations/Simple-Made-Easy"&gt;Rich Hickey - Simple Made Easy on InfoQ&lt;/a&gt;&lt;/strong&gt; (&lt;a href="https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md"&gt;transcript&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Simple Made Easy is about Hickey&amp;rsquo;s exploration of what simple really means, what it doesn&amp;rsquo;t mean, and how that can be used as a guide towards simplicity in software.&lt;/p&gt;
+
+&lt;p&gt;Most experienced programmers know that simplicity is difficult to achieve. Perhaps part of the reason for this is that simplicity seems to be somewhat subjective. Here, Hickey explains a framework to more objectively identify how simple a design is.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img alt="Simple as not interleaved" src="/images/simple_made_easy.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;He starts with the etymology of simple. It describes a meaning around the amount of &lt;em&gt;interleaving&lt;/em&gt;. What&amp;rsquo;s interesting is that this interpretation of simplicity is not about the number of elements, just how interleaved they are.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Simplicity is not about counting. I&amp;rsquo;d rather have more things hanging nice, straight down, not twisted together, than just a couple of things tied in a knot.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To help with this particular meaning of simple, he shares an archaic word that is specifically the opposite of this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;complect&lt;/strong&gt; - to interleave, entwine, or braid&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By using complecting as our primary anti-pattern, we can more easily see a path towards simplicity than the vague notion of &amp;ldquo;avoiding complexity.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;He also identifies that simple is not the same as easy, despite many using those words interchangeably. While easy is ultimately relative, simple in these terms has some objectivity to it. We can ask, &amp;ldquo;How much interleaving is there?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;The talk goes over a number tactical approaches to simplicity by not complecting, but there&amp;rsquo;s also wisdom shared around the value of simplicity.&lt;/p&gt;
+
+&lt;p&gt;Perhaps the biggest issue with complexity is that it undermines understanding your software. He makes the point that understanding is the real key to making changes quickly in software.&lt;/p&gt;
+
+&lt;p&gt;Conventional wisdom says testing is how we can make changes quickly. While there is clearly value in testing, the popular notion that test coverage above all else is what you need to move quickly is challenged by Hickey. He calls it guardrail programming.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What&amp;rsquo;s true of every bug found in the field? It passed all the tests. So now what do you do? I think we&amp;rsquo;re in this world I&amp;rsquo;d like to call guardrail programming. It&amp;rsquo;s really sad. We&amp;rsquo;re like, &amp;ldquo;I can make change because I have tests!&amp;rdquo; Who does that? Who drives their car around banging against the guardrail saying, &amp;ldquo;Whoa! I&amp;rsquo;m glad I&amp;rsquo;ve got these guardrails because I&amp;rsquo;d never make it to the show on time.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Once you find a bug, tests only tell you what the problem isn&amp;rsquo;t. You have to reason about the program, debug it, try things. If the program is complex, this is harder to do. The only way to improve this process is if the program is simple.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Compared to the complexity we can create, we&amp;rsquo;re all statistically at the same point in our ability to understand it, which is not very good. So we&amp;rsquo;re going to have to bring things towards us.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There&amp;rsquo;s definitely a lot of great insight in this talk. As a final point, let&amp;rsquo;s remember that simplicity doesn&amp;rsquo;t just happen. It&amp;rsquo;s not the default mode of software engineering.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Simplicity is a choice. It requires constant vigilance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We need more thinking around simplicity. If you know of other great talks on simplicity, in software or otherwise, please share in the comments.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Weave Sponsors Glider Labs Service Discovery Projects</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/"/>
+    <id>http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/</id>
+    <published>2015-04-22T16:23:00-07:00</published>
+    <updated>2015-06-19T10:57:23-07:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;Today we&amp;rsquo;re happy to introduce &lt;a href="http://weave.works/"&gt;Weaveworks&lt;/a&gt;, authors of &lt;a href="https://github.com/weaveworks/weave"&gt;Weave&lt;/a&gt;, as our newest sponsor. This sponsorship will most immediately support development and increased releases of &lt;a href="https://github.com/gliderlabs/registrator"&gt;Registrator&lt;/a&gt;, our Docker service discovery bridge. It also enables us to release a few new projects in this space over the next couple months.&lt;/p&gt;
+
+&lt;p&gt;This six month sponsorship not only supports our work, but the joint effort across vendors to help Docker become more extensible. Along with Weaveworks, we&amp;rsquo;re among a few working with Docker to help design a plugin system, initially allowing basic extension points around networking and volumes.&lt;/p&gt;
+
+&lt;p&gt;It also means we&amp;rsquo;ll be exploring integration with various Weave components, such as Registrator with &lt;a href="https://github.com/weaveworks/weave/tree/master/weavedns"&gt;WeaveDNS&lt;/a&gt;. We&amp;rsquo;ll also be sharing some of the use cases with current and future Weave services for Docker software networking.&lt;/p&gt;
+
+&lt;p&gt;Besides our consulting and system integration services, Glider Labs is an independent systems R&amp;amp;D lab. Our open source work towards unraveling the &lt;a href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"&gt;modern systems mess&lt;/a&gt; is made possible by sponsorships like this. If your organization is interested in supporting our work the way Weaveworks has, please &lt;a href="mailto:team+sponsor@gliderlabs.com"&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Docker Events Explained</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/14/docker-events-explained/"/>
+    <id>http://gliderlabs.com/blog/2015/04/14/docker-events-explained/</id>
+    <published>2015-04-14T16:48:00-07:00</published>
+    <updated>2015-06-19T10:57:23-07:00</updated>
+    <author>
+      <name>Matt Good</name>
+    </author>
+    <content type="html">&lt;p&gt;One of the fantastic features of the Docker platform is the events API. This enables tools like &lt;a href="https://github.com/gliderlabs/registrator"&gt;Registrator&lt;/a&gt; and &lt;a href="https://github.com/gliderlabs/logspout"&gt;Logspout&lt;/a&gt; to listen for container events like starting and stopping, then act on them.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://docs.docker.com/reference/api/docker_remote_api_v1.17/#monitor-dockers-events"&gt;Docker API documentation&lt;/a&gt; provides a list of the available events, but does not include much detail on what they mean and when they will occur. Since many of our tools depend on the events API, we&amp;rsquo;ve put together a chart illustrating the events triggered throughout the lifecycle of a Docker container (as of Docker version 1.5 / API version 1.17):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/docker_events.png"&gt;&lt;img width="650px" height="371px" alt="Docker events diagram" src="/images/docker_events.png" title="Container-related Docker events" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A few container-related events are not included in this illustration since they are not affected by container state:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;export&lt;/strong&gt; emitted by &lt;code&gt;docker export&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;exec_create&lt;/strong&gt; emitted by &lt;code&gt;docker exec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;exec_start&lt;/strong&gt; also emitted by &lt;code&gt;docker exec&lt;/code&gt; after &lt;strong&gt;exec_create&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are also several events not in this diagram that are related to Docker images rather than containers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;import&lt;/strong&gt; emitted by &lt;code&gt;docker import&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pull&lt;/strong&gt; emitted by &lt;code&gt;docker pull&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;untag&lt;/strong&gt; emitted by &lt;code&gt;docker rmi&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;delete&lt;/strong&gt; emitted by &lt;code&gt;docker rmi&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Running &lt;code&gt;docker rmi&lt;/code&gt; emits an &lt;code&gt;untag&lt;/code&gt; event when removing an image tag name. The &lt;code&gt;rmi&lt;/code&gt; command may also emit &lt;code&gt;delete&lt;/code&gt; events for any image IDs deleted, either by deleting an image by ID directly, or deleting the last tag referring to it.&lt;/p&gt;
+
+&lt;p&gt;We encourage more people to take advantage of the Docker events API, and we hope this diagram is useful. The Docker team is &lt;a href="https://github.com/docker/docker/issues/12164"&gt;considering including this diagram in the documentation&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What have we been doing for 40 years?</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/"/>
+    <id>http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/</id>
+    <published>2015-04-07T20:29:00-07:00</published>
+    <updated>2015-06-19T10:57:23-07:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="/images/xerox_parc_1975.jpg" title="Xerox PARC, 1975 via Computer History Museum" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Desktop computing, graphical user interfaces, object-oriented programming, laser printing, Ethernet. Pillars of modern computing invented by only 25 people over 5 years at one place: Xerox PARC.&lt;/p&gt;
+
+&lt;p&gt;Unix and C. Foundations of modern systems software initially developed by just 2 people over 3 years at one place: Bell Labs.&lt;/p&gt;
+
+&lt;p&gt;Both happened in the early 1970s. &lt;em&gt;That was over 40 years ago.&lt;/em&gt; What exactly have the rest of us been doing since?&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;We&amp;rsquo;ve been looking at photos of cats!&amp;rdquo; Okay, but really.&lt;/p&gt;
+
+&lt;p&gt;The startup world responds half-jokingly, and perhaps with an air of trademark Silicon Valley superiority, &amp;ldquo;Um, we&amp;rsquo;ve been innovating? You know, bringing all this to market and making it easier to use?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;They&amp;rsquo;re right! We&amp;rsquo;ve been innovating. That doesn&amp;rsquo;t sound so bad, does it? It&amp;rsquo;s not, but there is a big difference between invention and innovation. &lt;strong&gt;The problem is that innovation feeds on invention, and we&amp;rsquo;ve been feeding on the same inventions for 40 years.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Consumers are not complaining. In fact, they&amp;rsquo;re eating it up. Innovation is clearly where the money is and there&amp;rsquo;s plenty more. Now anybody in Silicon Valley that claims to be inventing is usually lying. Most are proud &lt;em&gt;not&lt;/em&gt; to be inventing.&lt;/p&gt;
+
+&lt;p&gt;Some say Google X is the new Xerox PARC. No way. Google X is about sexy commercial applications that are extremely risky. Xerox PARC was about researchers&amp;rsquo; independent curiosity and vision. One was set up for &amp;ldquo;pie in the sky&amp;rdquo; innovation, the other was set up for &amp;ldquo;blue sky&amp;rdquo; &lt;em&gt;invention&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, systems software and tooling naturally gets more attention when allowed blue sky invention. Put a bunch of computer scientists together and let them do whatever they want. What are they going to do? Odds are they&amp;rsquo;ll design a new programming language. Exactly! I know that&amp;rsquo;s not particularly ideal, but it reveals the inherent bias. Compare that scenario with them being tasked to change the world.&lt;/p&gt;
+
+&lt;p&gt;Innovation is great. I&amp;rsquo;m not trying to devalue the work we&amp;rsquo;ve done since the 70s. However, this obsession with innovation clearly devalues invention. Moreover, looking at what are effectively the same tools after 40 years, my concern is that lack of invention stifles major progress in systems software.&lt;/p&gt;
+
+&lt;p&gt;The good news is that we&amp;rsquo;ve seen it could only take a handful of people in the right place with the right incentives to make another leap. It just most likely won&amp;rsquo;t be VC backed.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>New Logspout: Extensible Docker Logging</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/"/>
+    <id>http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/</id>
+    <published>2015-03-31T13:07:00-07:00</published>
+    <updated>2015-06-19T10:57:23-07:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="https://github.com/gliderlabs/logspout"&gt;Logspout&lt;/a&gt; is a Docker container for stateless, host-level log forwarding. It was designed specifically for Docker container logs. It&amp;rsquo;s one of the earliest standalone components built for the Docker ecosystem, and the canonical way to deal with Docker logs for many.&lt;/p&gt;
+
+&lt;p&gt;After Glider Labs adopted the project, we updated and automated its build and release process, switched it to &lt;a href="http://gliderlabs.com/blog/2015/03/20/our-minimal-alpine-linux-image-joins-docker-official-images/"&gt;Alpine&lt;/a&gt;, and took care of a few long standing bugs. Our next release will focus on a re-architected version that is more modular and more extensible.&lt;/p&gt;
+
+&lt;p&gt;You can try it now in master &lt;code&gt;HEAD&lt;/code&gt;, which is also tagged on Docker Hub as &lt;code&gt;:master&lt;/code&gt;. In preparation for the next release, let us tell you more about it.&lt;/p&gt;
+
+&lt;h3&gt;Modules&lt;/h3&gt;
+
+&lt;p&gt;Logspout now includes a concept of modules, similar to, say, Nginx modules. Modules are chunks of functionality added or removed at compile-time. In our case, they&amp;rsquo;re added or removed at Docker build-time, with no need for you to set up or install any compiler toolchain.&lt;/p&gt;
+
+&lt;p&gt;Managing modules happens in a &lt;code&gt;modules.go&lt;/code&gt; source file that is intended for operators to edit. Although it&amp;rsquo;s a Go source file, think of it like a configuration file. No real knowledge of Go is necessary. It looks like this:&lt;/p&gt;
+&lt;pre class="highlight go"&gt;&lt;code&gt;&lt;span class="k"&gt;package&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="x"&gt;
+
+&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="x"&gt;
+    &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="s"&gt;"github.com/gliderlabs/logspout/adapters/raw"&lt;/span&gt;&lt;span class="x"&gt;
+    &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="s"&gt;"github.com/gliderlabs/logspout/adapters/syslog"&lt;/span&gt;&lt;span class="x"&gt;
+    &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="s"&gt;"github.com/gliderlabs/logspout/httpstream"&lt;/span&gt;&lt;span class="x"&gt;
+    &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="s"&gt;"github.com/gliderlabs/logspout/routesapi"&lt;/span&gt;&lt;span class="x"&gt;
+    &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="s"&gt;"github.com/gliderlabs/logspout/transports/tcp"&lt;/span&gt;&lt;span class="x"&gt;
+    &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="s"&gt;"github.com/gliderlabs/logspout/transports/udp"&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These are the default modules used in Logspout. It&amp;rsquo;s safe to remove any of these lines to drop a module. You can also add lines pointing to new Logspout module packages. These packages can live in any repository, allowing you to build your own modules without forking or pushing upstream to the logspout repository.&lt;/p&gt;
+
+&lt;p&gt;Editing this file seems to suggest you&amp;rsquo;d need to fork the logspout repository to make a custom build, but you don&amp;rsquo;t. We let you customize &lt;code&gt;modules.go&lt;/code&gt; with an &lt;code&gt;ONBUILD&lt;/code&gt; hook. With this, making a custom build of Logspout that follows official releases is extremely easy. &lt;a href="https://github.com/gliderlabs/logspout/tree/master/custom"&gt;Here is an example.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Adapters and Transports&lt;/h3&gt;
+
+&lt;p&gt;Previously, the idea of a &amp;ldquo;Logspout adapter&amp;rdquo; was just a hardcoded function mapping in Logspout. We started with an RFC 3164 &amp;ldquo;syslog&amp;rdquo; adapter, then others contributed two more: a JSON over UDP adapter, and a separate &amp;ldquo;rfc5424&amp;rdquo; adapter for modern syslog. People also asked for TCP syslog, or hacked in support for other adapters like RabbitMQ and Kafka.&lt;/p&gt;
+
+&lt;p&gt;Using modules, we now have a real API for adding new and externally maintained adapters. We also support different transports, which can be used by adapters to prevent needing to create adapters for each type of possible transport. For example, the new syslog adapter lets you use UDP, TCP, or any other transport added in the future, such as perhaps &lt;a href="https://github.com/gliderlabs/logspout/blob/master/transports/tls/tls.go"&gt;TLS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We then redesigned our built-in adapters. There is now a single syslog adapter that supports both RFC 5425 (default) and RFC 3164. It&amp;rsquo;s more configurable and out of the box has more sensible defaults. There&amp;rsquo;s also a raw adapter that allows generalized templated log messages over any supported transport.&lt;/p&gt;
+
+&lt;h3&gt;Extension Points&lt;/h3&gt;
+
+&lt;p&gt;For those interested in writing adapters, or are curious about our extension architecture, Logspout modules are enabled by &lt;a href="https://github.com/progrium/go-extpoints"&gt;go-extpoints&lt;/a&gt;. This is a library and generator for building extension points in Go programs. Extension points are a mechanism for &lt;a href="http://en.wikipedia.org/wiki/Inversion_of_control"&gt;inversion of control&lt;/a&gt;, similar to &lt;a href="http://en.wikipedia.org/wiki/Dependency_injection"&gt;dependency injection&lt;/a&gt;. Each extension point represents a part of Logspout that a module can hook into.&lt;/p&gt;
+
+&lt;p&gt;Here is a list of current extension point types in Logspout. Some are more advanced or internally used than others, but are available to module authors nonetheless.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AdapterFactory&lt;/strong&gt; - allows you to add new types of route adapters (syslog, Kafka, etc)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AdapterTransport&lt;/strong&gt; - allows you to add new adapter transports (UDP, TLS, etc)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HttpHandler&lt;/strong&gt; - allows you to add new top level endpoints to the HTTP service&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Job&lt;/strong&gt; - allows you to add parallel running tasks (HTTP server, container pump, etc)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LogRouter&lt;/strong&gt; - allows you to add new log routing intakes (containers, syslog, etc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Extension &lt;em&gt;points&lt;/em&gt; are package singletons where you register and access objects implementing the type for that extension point. Extension &lt;em&gt;types&lt;/em&gt; like those listed above each have their own extension point. Extension types are either a Go interface, where an extension must implement the interface methods, or a function signature type definition, where an extension is literally a callback function.&lt;/p&gt;
+
+&lt;p&gt;Here is the simplest example of a module package hooking into an extension point. We implement the &lt;code&gt;HttpHandler&lt;/code&gt; function signature, which just says to return a Go &lt;code&gt;http.Handler&lt;/code&gt;, and register it with the &lt;code&gt;HttpHandlers&lt;/code&gt; extension point on package initialization.&lt;/p&gt;
+&lt;pre class="highlight go"&gt;&lt;code&gt;&lt;span class="k"&gt;package&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;hello&lt;/span&gt;&lt;span class="x"&gt;
+
+&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="x"&gt;
+  &lt;/span&gt;&lt;span class="s"&gt;"github.com/gliderlabs/logspout/router"&lt;/span&gt;&lt;span class="x"&gt;
+  &lt;/span&gt;&lt;span class="s"&gt;"net/http"&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;
+
+&lt;/span&gt;&lt;span class="k"&gt;func&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="x"&gt;
+  &lt;/span&gt;&lt;span class="n"&gt;router&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;HttpHandlers&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Register&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;HelloHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="s"&gt;"hello"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="x"&gt;
+
+&lt;/span&gt;&lt;span class="k"&gt;func&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;HelloHandler&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Handler&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="x"&gt;
+  &lt;/span&gt;&lt;span class="n"&gt;mux&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;NewServeMux&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="x"&gt;
+  &lt;/span&gt;&lt;span class="n"&gt;mux&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;HandleFunc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"/hello"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="k"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ResponseWriter&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Request&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="x"&gt;
+    &lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Write&lt;/span&gt;&lt;span class="p"&gt;([]&lt;/span&gt;&lt;span class="kt"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Hello!"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="x"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;&lt;span class="x"&gt;
+  &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;mux&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="x"&gt;
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Adding an import for this package in &lt;code&gt;modules.go&lt;/code&gt; and rebuilding will add a new &lt;code&gt;/hello&lt;/code&gt; endpoint to the Logspout web server.&lt;/p&gt;
+
+&lt;p&gt;For more examples, check out the other default modules in the Logspout repository such as &lt;a href="https://github.com/gliderlabs/logspout/tree/master/httpstream"&gt;httpstream&lt;/a&gt;, &lt;a href="https://github.com/gliderlabs/logspout/tree/master/routesapi"&gt;routesapi&lt;/a&gt;, and of course the &lt;a href="https://github.com/gliderlabs/logspout/tree/master/adapters"&gt;adapter&lt;/a&gt; and &lt;a href="https://github.com/gliderlabs/logspout/tree/master/transports"&gt;transport&lt;/a&gt; modules. Even much of the core Logspout &lt;a href="https://github.com/gliderlabs/logspout/tree/master/router"&gt;router package&lt;/a&gt; is implemented with extension points.&lt;/p&gt;
+
+&lt;h3&gt;Docker Log Drivers&lt;/h3&gt;
+
+&lt;p&gt;Docker itself is about to &lt;a href="https://github.com/docker/docker/issues/7195"&gt;support log drivers&lt;/a&gt;. This introduces improvements to current Docker logging, and lets you recompile Docker with new log drivers.&lt;/p&gt;
+
+&lt;p&gt;Logspout will continue to be an easier and more configurable solution for drop-in container log forwarding. The built-in log drivers in Docker will actually help many Logspout deployments, since you&amp;rsquo;ll be able to disable Docker writing logs to local disk. Let Logspout forward logs to where they should really be.&lt;/p&gt;
+
+&lt;p&gt;If you have questions about writing modules, using extension points, or using the latest Logspout, let us know via &lt;a href="https://github.com/gliderlabs/logspout/issues"&gt;Logspout issues&lt;/a&gt;, or join us in &lt;code&gt;#gliderlabs&lt;/code&gt; on Freenode.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Modern Systems Software Mess</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"/>
+    <id>http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/</id>
+    <published>2015-03-24T16:16:00-07:00</published>
+    <updated>2015-06-19T10:57:23-07:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;In August 2000, while Rob Pike was still at Bell Labs and before he co-developed Go, he gave a talk called &lt;a href="http://doc.cat-v.org/bell_labs/utah2000/"&gt;Systems Software Research is Irrelevant&lt;/a&gt;. Today the situation is perhaps not as dire. At the very least, his examples are noticeably dated. However, many of his points remain true and point at systemic roadblocks to better systems software.&lt;/p&gt;
+
+&lt;p&gt;His main point was that academic research around systems software had lost the influence on industry it once had. The rise of Google and its academically inclined engineering culture is maybe the biggest shift since this talk. Google has applied and published great research on software systems, particularly around distributed systems.&lt;/p&gt;
+
+&lt;p&gt;That said, there are points from this talk that resonate with and inspire people like us trying to fill the void of modern systems R&amp;amp;D.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Startups are too focused on short time scale and practical results to try new things.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;At first I thought, &amp;ldquo;That&amp;rsquo;s not true!&amp;rdquo; Then I realized what startups really do is often take the opportunity to apply &lt;em&gt;recent&lt;/em&gt; ideas (ie Docker), but rarely do they (nor should they) try to &lt;em&gt;invent&lt;/em&gt; novel approaches to systems.&lt;/p&gt;
+
+&lt;p&gt;Instead, invention most often comes from organizations large enough to necessitate invention for their particular problem and scale, or startup vendors that are trying to sell a shiny new solution. This has yielded great papers, best practices, and open source software, but in all cases these are independent solutions to specific problems.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Go back to thinking about and &lt;em&gt;building systems&lt;/em&gt;. Narrowness is irrelevant; breadth is relevant: it&amp;rsquo;s the essence of &lt;em&gt;system&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No one vendor will provide a solution for your entire system. There are virtualization vendors, CI vendors, source control vendors, operating system vendors, configuration management vendors, database vendors, container management vendors, and on and on.&lt;/p&gt;
+
+&lt;p&gt;Whether these are hosted services or commercially supported open source software, none of them will ever solve (read: own) the system. No matter what they think or what they tell you.&lt;/p&gt;
+
+&lt;p&gt;Instead, we collectively share best practices and loosely converge on similar system architectures. But who has the incentive and business platform that can support &lt;em&gt;systemic&lt;/em&gt; innovation?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There has been much talk about component architectures but only one true success: Unix pipes. It should be possible to build interactive and distributed applications from piece parts.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If there is a guiding hypothesis behind the Glider Labs approach to building systems, this is it. Rarely does this get a chance to be fully explored.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
