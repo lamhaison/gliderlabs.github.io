@@ -5,7 +5,7 @@
   <id>http://gliderlabs.com/blog</id>
   <link href="http://gliderlabs.com/blog"/>
   <link href="http://gliderlabs.com/blog/atom.xml" rel="self"/>
-  <updated>2015-04-29T04:18:00-07:00</updated>
+  <updated>2015-04-29T06:18:00-05:00</updated>
   <author>
     <name>Glider Labs</name>
     <email>team@gliderlabs.com</email>
@@ -14,8 +14,8 @@
     <title>Build simple systems to build good systems</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/29/build-simple-systems-to-build-good-systems/"/>
     <id>http://gliderlabs.com/blog/2015/04/29/build-simple-systems-to-build-good-systems/</id>
-    <published>2015-04-29T04:18:00-07:00</published>
-    <updated>2015-06-19T10:57:23-07:00</updated>
+    <published>2015-04-29T06:18:00-05:00</published>
+    <updated>2015-06-19T12:57:23-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -74,8 +74,8 @@
     <title>Weave Sponsors Glider Labs Service Discovery Projects</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/"/>
     <id>http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/</id>
-    <published>2015-04-22T16:23:00-07:00</published>
-    <updated>2015-06-19T10:57:23-07:00</updated>
+    <published>2015-04-22T18:23:00-05:00</published>
+    <updated>2015-06-19T12:57:23-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -92,8 +92,8 @@
     <title>Docker Events Explained</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/14/docker-events-explained/"/>
     <id>http://gliderlabs.com/blog/2015/04/14/docker-events-explained/</id>
-    <published>2015-04-14T16:48:00-07:00</published>
-    <updated>2015-06-19T10:57:23-07:00</updated>
+    <published>2015-04-14T18:48:00-05:00</published>
+    <updated>2015-06-19T12:57:23-05:00</updated>
     <author>
       <name>Matt Good</name>
     </author>
@@ -129,8 +129,8 @@
     <title>What have we been doing for 40 years?</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/"/>
     <id>http://gliderlabs.com/blog/2015/04/08/what-have-we-been-doing-for-40-years/</id>
-    <published>2015-04-07T20:29:00-07:00</published>
-    <updated>2015-06-19T10:57:23-07:00</updated>
+    <published>2015-04-07T22:29:00-05:00</published>
+    <updated>2015-06-19T12:57:23-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -163,8 +163,8 @@
     <title>New Logspout: Extensible Docker Logging</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/"/>
     <id>http://gliderlabs.com/blog/2015/03/31/new-logspout-extensible-docker-logging/</id>
-    <published>2015-03-31T13:07:00-07:00</published>
-    <updated>2015-06-19T10:57:23-07:00</updated>
+    <published>2015-03-31T15:07:00-05:00</published>
+    <updated>2015-06-19T12:57:23-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
@@ -258,8 +258,8 @@
     <title>The Modern Systems Software Mess</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"/>
     <id>http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/</id>
-    <published>2015-03-24T16:16:00-07:00</published>
-    <updated>2015-06-19T10:57:23-07:00</updated>
+    <published>2015-03-24T18:16:00-05:00</published>
+    <updated>2015-06-19T12:57:23-05:00</updated>
     <author>
       <name>Jeff Lindsay</name>
     </author>
