@@ -5,11 +5,35 @@
   <id>http://gliderlabs.com/blog</id>
   <link href="http://gliderlabs.com/blog"/>
   <link href="http://gliderlabs.com/blog/atom.xml" rel="self"/>
-  <updated>2015-04-29T06:18:00-05:00</updated>
+  <updated>2015-07-20T09:44:00-05:00</updated>
   <author>
     <name>Glider Labs</name>
     <email>team@gliderlabs.com</email>
   </author>
+  <entry>
+    <title>DockerCon 2015 happened.</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/07/20/dockercon-2015-happened/"/>
+    <id>http://gliderlabs.com/blog/2015/07/20/dockercon-2015-happened/</id>
+    <published>2015-07-20T09:44:00-05:00</published>
+    <updated>2015-07-20T09:51:21-05:00</updated>
+    <author>
+      <name>Glider Labs</name>
+    </author>
+    <content type="html">&lt;p&gt;This year we attended the second annual DockerCon in San Francisco. We almost didn&amp;rsquo;t, as our proposed talks were passed on. My abstracts are often generic sounding placeholders, so I don&amp;rsquo;t blame the conference organizers for skipping over an original Docker team member. Regardless, a month before the event, I got an invitation to moderate lightning talks, as well as to give one.&lt;/p&gt;
+
+&lt;p&gt;Separately, our work with Docker, ClusterHQ, and Weaveworks on Docker plugins was announced at the keynote. They gave the three of us a session to introduce Docker plugins in more detail. ClusterHQ has &lt;a href="https://clusterhq.com/2015/07/01/docker-plugins-complete-the-puzzle/"&gt;a nice write-up&lt;/a&gt;, though The New Stack also has &lt;a href="http://thenewstack.io/the-real-docker-ecosystem-launches-with-plugins/"&gt;a good write-up&lt;/a&gt; as industry press. I was just pleasantly surprised to see the Glider Labs logo in Solomon&amp;rsquo;s keynote. (However, I&amp;rsquo;m not sure why Mesosphere is mentioned at all.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Conway's Life" src="/images/dockercon2015.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Besides that it was really great to hear from so many people using Glider Labs projects. Our Alpine image is definitely a hit. We saw a number of Docker employees using it in their demos. Talking to vendors at the booths, it seemed 90% of them were using a Glider Labs project of some kind, whether Alpine, Registrator, or Logspout. This is especially exciting because these projects are just the beginning.&lt;/p&gt;
+
+&lt;p&gt;The lightning talks were also fun. I used my lightning talk as an excuse to put together a proof of concept for a project now called Envy. It&amp;rsquo;s a sort of development environment manager, re-envisioning the idea of development environments with containers. I believe somebody suggested it could be a Vagrant killer? I gave the demo several times at DockerCon and it was quite well received.&lt;/p&gt;
+
+&lt;p&gt;Definitely looking forward to next year!&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/131329120" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</content>
+  </entry>
   <entry>
     <title>Build simple systems to build good systems</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/29/build-simple-systems-to-build-good-systems/"/>
@@ -252,46 +276,6 @@
 &lt;p&gt;Logspout will continue to be an easier and more configurable solution for drop-in container log forwarding. The built-in log drivers in Docker will actually help many Logspout deployments, since you&amp;rsquo;ll be able to disable Docker writing logs to local disk. Let Logspout forward logs to where they should really be.&lt;/p&gt;
 
 &lt;p&gt;If you have questions about writing modules, using extension points, or using the latest Logspout, let us know via &lt;a href="https://github.com/gliderlabs/logspout/issues"&gt;Logspout issues&lt;/a&gt;, or join us in &lt;code&gt;#gliderlabs&lt;/code&gt; on Freenode.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Modern Systems Software Mess</title>
-    <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"/>
-    <id>http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/</id>
-    <published>2015-03-24T18:16:00-05:00</published>
-    <updated>2015-06-19T12:57:23-05:00</updated>
-    <author>
-      <name>Jeff Lindsay</name>
-    </author>
-    <content type="html">&lt;p&gt;In August 2000, while Rob Pike was still at Bell Labs and before he co-developed Go, he gave a talk called &lt;a href="http://doc.cat-v.org/bell_labs/utah2000/"&gt;Systems Software Research is Irrelevant&lt;/a&gt;. Today the situation is perhaps not as dire. At the very least, his examples are noticeably dated. However, many of his points remain true and point at systemic roadblocks to better systems software.&lt;/p&gt;
-
-&lt;p&gt;His main point was that academic research around systems software had lost the influence on industry it once had. The rise of Google and its academically inclined engineering culture is maybe the biggest shift since this talk. Google has applied and published great research on software systems, particularly around distributed systems.&lt;/p&gt;
-
-&lt;p&gt;That said, there are points from this talk that resonate with and inspire people like us trying to fill the void of modern systems R&amp;amp;D.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Startups are too focused on short time scale and practical results to try new things.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;At first I thought, &amp;ldquo;That&amp;rsquo;s not true!&amp;rdquo; Then I realized what startups really do is often take the opportunity to apply &lt;em&gt;recent&lt;/em&gt; ideas (ie Docker), but rarely do they (nor should they) try to &lt;em&gt;invent&lt;/em&gt; novel approaches to systems.&lt;/p&gt;
-
-&lt;p&gt;Instead, invention most often comes from organizations large enough to necessitate invention for their particular problem and scale, or startup vendors that are trying to sell a shiny new solution. This has yielded great papers, best practices, and open source software, but in all cases these are independent solutions to specific problems.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Go back to thinking about and &lt;em&gt;building systems&lt;/em&gt;. Narrowness is irrelevant; breadth is relevant: it&amp;rsquo;s the essence of &lt;em&gt;system&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;No one vendor will provide a solution for your entire system. There are virtualization vendors, CI vendors, source control vendors, operating system vendors, configuration management vendors, database vendors, container management vendors, and on and on.&lt;/p&gt;
-
-&lt;p&gt;Whether these are hosted services or commercially supported open source software, none of them will ever solve (read: own) the system. No matter what they think or what they tell you.&lt;/p&gt;
-
-&lt;p&gt;Instead, we collectively share best practices and loosely converge on similar system architectures. But who has the incentive and business platform that can support &lt;em&gt;systemic&lt;/em&gt; innovation?&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;There has been much talk about component architectures but only one true success: Unix pipes. It should be possible to build interactive and distributed applications from piece parts.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;If there is a guiding hypothesis behind the Glider Labs approach to building systems, this is it. Rarely does this get a chance to be fully explored.&lt;/p&gt;
 </content>
   </entry>
 </feed>
