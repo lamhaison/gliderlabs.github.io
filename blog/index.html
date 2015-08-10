@@ -36,6 +36,96 @@
 <div class="row">
   <div class="col-lg-9">
     <article>
+      <h1><a href="/blog/2015/08/10/registrator-v6/">Registrator v6</a></h1>
+      <p class="sub">Glider Labs wrote this on
+        August
+        10,
+        2015</p>
+
+      <p>Last Friday we finally cut a <a href="https://github.com/gliderlabs/registrator/releases/tag/v6">new release</a> of Registrator. At the bottom of this
+post are relevant changes, but for most already using Registrator from master there is nothing new. However, with this release there is also a great new <a href="http://gliderlabs.com/registrator">documentation
+site</a>.</p>
+
+<p>Our last release turned out to have some critical bugs that caused us to
+immediately re-point <code>gliderlabs/registrator:latest</code> to our <em>previous</em> release.
+So for the past six months, if anybody was using <code>:latest</code>, they were using a
+pretty old version. Most active users have known to use <code>:master</code>.</p>
+
+<p>The plan was to fix the issues in v5 and quickly move to v6, but to avoid a
+repeat, we made the fixes and decided to wait and let the community verify
+stability of master. This went on for too long and for various reasons continued
+to slip.</p>
+
+<p>Given the popularity of Registrator and recent sponsorship by
+<a href="http://weave.works/">Weave</a>, we finally got to invest some time in Registrator to
+make it a more sustainable project. First we had to release current master. We
+also put some time into documentation, as well as <a href="http://gliderlabs.com/pagebuilder">documentation
+infrastructure</a> for other projects.</p>
+
+<p>Expect more releases soon as we start heading towards an LTS release.</p>
+
+<h3>Fixed</h3>
+
+<ul>
+<li>Support for etcd v0 and v2</li>
+<li>Panic from invalid skydns2 URI.</li>
+</ul>
+
+<h3>Added</h3>
+
+<ul>
+<li>Optional periodic resyncing of services from containers</li>
+<li>More error logging for registries</li>
+<li>Support for services on containers with <code>--net=host</code></li>
+<li>Added <code>extensions.go</code> file for adding/disabling components</li>
+<li>Interpolate <code>SERVICE_PORT</code> and <code>SERVICE_IP</code> in <code>SERVICE_X_CHECK_SCRIPT</code></li>
+<li>Ability to force IP for a service in Consul</li>
+<li>Implemented initial ping for every service registry</li>
+<li>Option to only deregister containers cleanly shutdown</li>
+<li>Added support for label metadata along with environment variables</li>
+</ul>
+
+<h3>Changed</h3>
+
+<ul>
+<li>Overall refactoring and cleanup</li>
+<li>Decoupled registries into subpackages using extpoints</li>
+<li>Replaced check-http script with Consul&rsquo;s native HTTP checks</li>
+</ul>
+
+
+    </article>
+
+    <a href="/blog/2015/08/10/registrator-v6/#disqus_thread">Comments</a>
+    <br /><br />
+  </div>
+
+  <div class="col-lg-3" id="sidebar">
+    <p>Glider Labs is a modern DevOps consultancy and systems R&amp;D lab in Austin, Texas.</p>
+    <p>We work with clients to build modern service architectures, operations automation, and Docker delivery pipelines.</p>
+    <p>We also build open source tools for the future of systems engineering, thanks to our partners and R&amp;D sponsors.</p>
+    <p>Glider Labs is owned and operated by <a href="https://twitter.com/andyamok">Andy Shinn</a> and <a href="http://twitter.com/progrium">Jeff Lindsay</a>.</p>
+
+    <p class="social">
+    	<h5><a href="http://github.com/gliderlabs">
+    		<i class="fa fa-github fa-2x"></i>Github</a></h5>
+    	<h5><a href="http://twitter.com/gliderlabs">
+    		<i class="fa fa-twitter-square fa-2x"></i>Twitter</a></h5>
+    	<h5><a href="/blog/atom.xml">
+    		<i class="fa fa-rss-square fa-2x"></i>Feed</a></h5>
+    </p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section  class="alternate">
+<div class="container">
+<div class="row">
+  <div class="col-lg-9">
+    <article>
       <h1><a href="/blog/2015/08/04/high-performance-messaging/">High-performance messaging expertise</a></h1>
       <p class="sub">Jeff Lindsay wrote this on
         August
@@ -72,29 +162,10 @@ known.</p>
     <a href="/blog/2015/08/04/high-performance-messaging/#disqus_thread">Comments</a>
     <br /><br />
   </div>
-
-  <div class="col-lg-3" id="sidebar">
-    <p>Glider Labs is a modern DevOps consultancy and systems R&amp;D lab in Austin, Texas.</p>
-    <p>We work with clients to build modern service architectures, operations automation, and Docker delivery pipelines.</p>
-    <p>We also build open source tools for the future of systems engineering, thanks to our partners and R&amp;D sponsors.</p>
-    <p>Glider Labs is owned and operated by <a href="https://twitter.com/andyamok">Andy Shinn</a> and <a href="http://twitter.com/progrium">Jeff Lindsay</a>.</p>
-
-    <p class="social">
-    	<h5><a href="http://github.com/gliderlabs">
-    		<i class="fa fa-github fa-2x"></i>Github</a></h5>
-    	<h5><a href="http://twitter.com/gliderlabs">
-    		<i class="fa fa-twitter-square fa-2x"></i>Twitter</a></h5>
-    	<h5><a href="/blog/atom.xml">
-    		<i class="fa fa-rss-square fa-2x"></i>Feed</a></h5>
-    </p>
-</div>
-
 </div>
 </div>
 </section>
-
-
-<section  class="alternate">
+<section >
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -128,7 +199,7 @@ known.</p>
 </div>
 </div>
 </section>
-<section >
+<section  class="alternate">
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -198,7 +269,7 @@ known.</p>
 </div>
 </div>
 </section>
-<section  class="alternate">
+<section >
 <div class="container">
 <div class="row">
   <div class="col-lg-9">
@@ -221,53 +292,6 @@ known.</p>
     </article>
 
     <a href="/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/#disqus_thread">Comments</a>
-    <br /><br />
-  </div>
-</div>
-</div>
-</section>
-<section >
-<div class="container">
-<div class="row">
-  <div class="col-lg-9">
-    <article>
-      <h1><a href="/blog/2015/04/14/docker-events-explained/">Docker Events Explained</a></h1>
-      <p class="sub">Matt Good wrote this on
-        April
-        14,
-        2015</p>
-
-      <p>One of the fantastic features of the Docker platform is the events API. This enables tools like <a href="https://github.com/gliderlabs/registrator">Registrator</a> and <a href="https://github.com/gliderlabs/logspout">Logspout</a> to listen for container events like starting and stopping, then act on them.</p>
-
-<p>The <a href="https://docs.docker.com/reference/api/docker_remote_api_v1.17/#monitor-dockers-events">Docker API documentation</a> provides a list of the available events, but does not include much detail on what they mean and when they will occur. Since many of our tools depend on the events API, we&rsquo;ve put together a chart illustrating the events triggered throughout the lifecycle of a Docker container (as of Docker version 1.5 / API version 1.17):</p>
-
-<p><a href="/images/docker_events.png"><img width="650px" height="371px" alt="Docker events diagram" src="/images/docker_events.png" title="Container-related Docker events" /></a></p>
-
-<p>A few container-related events are not included in this illustration since they are not affected by container state:</p>
-
-<ul>
-<li><strong>export</strong> emitted by <code>docker export</code></li>
-<li><strong>exec_create</strong> emitted by <code>docker exec</code></li>
-<li><strong>exec_start</strong> also emitted by <code>docker exec</code> after <strong>exec_create</strong></li>
-</ul>
-
-<p>There are also several events not in this diagram that are related to Docker images rather than containers:</p>
-
-<ul>
-<li><strong>import</strong> emitted by <code>docker import</code></li>
-<li><strong>pull</strong> emitted by <code>docker pull</code></li>
-<li><strong>untag</strong> emitted by <code>docker rmi</code></li>
-<li><strong>delete</strong> emitted by <code>docker rmi</code></li>
-</ul>
-
-<p>Running <code>docker rmi</code> emits an <code>untag</code> event when removing an image tag name. The <code>rmi</code> command may also emit <code>delete</code> events for any image IDs deleted, either by deleting an image by ID directly, or deleting the last tag referring to it.</p>
-
-<p>We encourage more people to take advantage of the Docker events API, and we hope this diagram is useful. The Docker team is <a href="https://github.com/docker/docker/issues/12164">considering including this diagram in the documentation</a>.</p>
-
-
-    </article>
-
-    <a href="/blog/2015/04/14/docker-events-explained/#disqus_thread">Comments</a>
     <br /><br />
   </div>
 </div>

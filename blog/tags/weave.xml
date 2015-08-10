@@ -5,11 +5,72 @@
   <id>http://gliderlabs.com/blog</id>
   <link href="http://gliderlabs.com/blog"/>
   <link href="http://gliderlabs.com/blog/tags/weave.xml" rel="self"/>
-  <updated>2015-08-04T12:20:00-05:00</updated>
+  <updated>2015-08-10T13:55:00-05:00</updated>
   <author>
     <name>Glider Labs</name>
     <email>team@gliderlabs.com</email>
   </author>
+  <entry>
+    <title>Registrator v6</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/08/10/registrator-v6/"/>
+    <id>http://gliderlabs.com/blog/2015/08/10/registrator-v6/</id>
+    <published>2015-08-10T13:55:00-05:00</published>
+    <updated>2015-08-10T14:18:28-05:00</updated>
+    <author>
+      <name>Glider Labs</name>
+    </author>
+    <content type="html">&lt;p&gt;Last Friday we finally cut a &lt;a href="https://github.com/gliderlabs/registrator/releases/tag/v6"&gt;new release&lt;/a&gt; of Registrator. At the bottom of this
+post are relevant changes, but for most already using Registrator from master there is nothing new. However, with this release there is also a great new &lt;a href="http://gliderlabs.com/registrator"&gt;documentation
+site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our last release turned out to have some critical bugs that caused us to
+immediately re-point &lt;code&gt;gliderlabs/registrator:latest&lt;/code&gt; to our &lt;em&gt;previous&lt;/em&gt; release.
+So for the past six months, if anybody was using &lt;code&gt;:latest&lt;/code&gt;, they were using a
+pretty old version. Most active users have known to use &lt;code&gt;:master&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The plan was to fix the issues in v5 and quickly move to v6, but to avoid a
+repeat, we made the fixes and decided to wait and let the community verify
+stability of master. This went on for too long and for various reasons continued
+to slip.&lt;/p&gt;
+
+&lt;p&gt;Given the popularity of Registrator and recent sponsorship by
+&lt;a href="http://weave.works/"&gt;Weave&lt;/a&gt;, we finally got to invest some time in Registrator to
+make it a more sustainable project. First we had to release current master. We
+also put some time into documentation, as well as &lt;a href="http://gliderlabs.com/pagebuilder"&gt;documentation
+infrastructure&lt;/a&gt; for other projects.&lt;/p&gt;
+
+&lt;p&gt;Expect more releases soon as we start heading towards an LTS release.&lt;/p&gt;
+
+&lt;h3&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support for etcd v0 and v2&lt;/li&gt;
+&lt;li&gt;Panic from invalid skydns2 URI.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Optional periodic resyncing of services from containers&lt;/li&gt;
+&lt;li&gt;More error logging for registries&lt;/li&gt;
+&lt;li&gt;Support for services on containers with &lt;code&gt;--net=host&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;extensions.go&lt;/code&gt; file for adding/disabling components&lt;/li&gt;
+&lt;li&gt;Interpolate &lt;code&gt;SERVICE_PORT&lt;/code&gt; and &lt;code&gt;SERVICE_IP&lt;/code&gt; in &lt;code&gt;SERVICE_X_CHECK_SCRIPT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ability to force IP for a service in Consul&lt;/li&gt;
+&lt;li&gt;Implemented initial ping for every service registry&lt;/li&gt;
+&lt;li&gt;Option to only deregister containers cleanly shutdown&lt;/li&gt;
+&lt;li&gt;Added support for label metadata along with environment variables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Overall refactoring and cleanup&lt;/li&gt;
+&lt;li&gt;Decoupled registries into subpackages using extpoints&lt;/li&gt;
+&lt;li&gt;Replaced check-http script with Consul&amp;rsquo;s native HTTP checks&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Weave Sponsors Glider Labs Service Discovery Projects</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/"/>
