@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Glider Labs - weave</title>
+  <subtitle>Infrastructure building blocks designed for humans</subtitle>
+  <id>http://gliderlabs.com/blog</id>
+  <link href="http://gliderlabs.com/blog"/>
+  <link href="http://gliderlabs.com/blog/tags/weave.xml" rel="self"/>
+  <updated>2015-08-04T12:20:00-05:00</updated>
+  <author>
+    <name>Glider Labs</name>
+    <email>team@gliderlabs.com</email>
+  </author>
+  <entry>
+    <title>Weave Sponsors Glider Labs Service Discovery Projects</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/"/>
+    <id>http://gliderlabs.com/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/</id>
+    <published>2015-04-22T18:23:00-05:00</published>
+    <updated>2015-08-10T13:23:12-05:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;Today we&amp;rsquo;re happy to introduce &lt;a href="http://weave.works/"&gt;Weaveworks&lt;/a&gt;, authors of &lt;a href="https://github.com/weaveworks/weave"&gt;Weave&lt;/a&gt;, as our newest sponsor. This sponsorship will most immediately support development and increased releases of &lt;a href="https://github.com/gliderlabs/registrator"&gt;Registrator&lt;/a&gt;, our Docker service discovery bridge. It also enables us to release a few new projects in this space over the next couple months.&lt;/p&gt;
+
+&lt;p&gt;This six month sponsorship not only supports our work, but the joint effort across vendors to help Docker become more extensible. Along with Weaveworks, we&amp;rsquo;re among a few working with Docker to help design a plugin system, initially allowing basic extension points around networking and volumes.&lt;/p&gt;
+
+&lt;p&gt;It also means we&amp;rsquo;ll be exploring integration with various Weave components, such as Registrator with &lt;a href="https://github.com/weaveworks/weave/tree/master/weavedns"&gt;WeaveDNS&lt;/a&gt;. We&amp;rsquo;ll also be sharing some of the use cases with current and future Weave services for Docker software networking.&lt;/p&gt;
+
+&lt;p&gt;Besides our consulting and system integration services, Glider Labs is an independent systems R&amp;amp;D lab. Our open source work towards unraveling the &lt;a href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"&gt;modern systems mess&lt;/a&gt; is made possible by sponsorships like this. If your organization is interested in supporting our work the way Weaveworks has, please &lt;a href="mailto:team+sponsor@gliderlabs.com"&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

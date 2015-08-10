@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Glider Labs - alpine</title>
+  <subtitle>Infrastructure building blocks designed for humans</subtitle>
+  <id>http://gliderlabs.com/blog</id>
+  <link href="http://gliderlabs.com/blog"/>
+  <link href="http://gliderlabs.com/blog/tags/alpine.xml" rel="self"/>
+  <updated>2015-08-04T12:20:00-05:00</updated>
+  <author>
+    <name>Glider Labs</name>
+    <email>team@gliderlabs.com</email>
+  </author>
+  <entry>
+    <title>Our minimal Alpine Linux image joins Docker official images</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/03/20/our-minimal-alpine-linux-image-joins-docker-official-images/"/>
+    <id>http://gliderlabs.com/blog/2015/03/20/our-minimal-alpine-linux-image-joins-docker-official-images/</id>
+    <published>2015-03-20T18:32:00-05:00</published>
+    <updated>2015-08-10T13:22:35-05:00</updated>
+    <author>
+      <name>Jeff Lindsay</name>
+    </author>
+    <content type="html">&lt;p&gt;When building Docker delivery pipelines, image size is extremely important for fast deploys. Unfortunately, it&amp;rsquo;s too easy to make Docker images over 1GB in size. This is true even when you use many of the official images. It&amp;rsquo;s especially true with many third-party base images. Dockerfile optimization is usually our first priority with clients.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.alpinelinux.org/"&gt;Alpine Linux&lt;/a&gt; has become our distribution of choice for minimal containers. Since discovering Alpine, we&amp;rsquo;ve been maintaining what&amp;rsquo;s become a fairly popular Docker image for it called &lt;a href="https://registry.hub.docker.com/u/gliderlabs/alpine/"&gt;&lt;code&gt;gliderlabs/alpine&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve been porting many of our open source containers like &lt;a href="https://github.com/gliderlabs/logspout"&gt;logspout&lt;/a&gt; and &lt;a href="https://github.com/gliderlabs/registrator"&gt;registrator&lt;/a&gt; to it. Although it&amp;rsquo;s not ideal for every situation, we were still surprised it was not in the Docker standard library. So we began preparing ours to be submitted.&lt;/p&gt;
+
+&lt;p&gt;This week we&amp;rsquo;re happy to announce that our image is now merged into the Docker library as an &lt;a href="https://registry.hub.docker.com/_/alpine/"&gt;official image&lt;/a&gt;. You can now build Alpine Linux based containers with simply &lt;code&gt;FROM alpine&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can also continue to use &lt;code&gt;gliderlabs/alpine&lt;/code&gt;. We use the same &lt;a href="https://github.com/gliderlabs/docker-alpine"&gt;repository&lt;/a&gt; and &lt;a href="https://circleci.com/gh/gliderlabs/docker-alpine"&gt;open build process&lt;/a&gt; to build &lt;code&gt;alpine&lt;/code&gt; as &lt;code&gt;gliderlabs/alpine&lt;/code&gt;. There are slight differences, but are effectively the same.&lt;/p&gt;
+
+&lt;p&gt;Whichever one you use, we hope you enjoy using Alpine Linux with Docker!&lt;/p&gt;
+</content>
+  </entry>
+</feed>

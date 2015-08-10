@@ -99,40 +99,6 @@ known.</p>
 <div class="row">
   <div class="col-lg-9">
     <article>
-      <h1><a href="/blog/2015/07/20/dockercon-2015-happened/">DockerCon 2015 happened.</a></h1>
-      <p class="sub">Glider Labs wrote this on
-        July
-        20,
-        2015</p>
-
-      <p>This year we attended the second annual DockerCon in San Francisco. We almost didn&rsquo;t, as our proposed talks were passed on. My abstracts are often generic sounding placeholders, so I don&rsquo;t blame the conference organizers for skipping over an original Docker team member. Regardless, a month before the event, I got an invitation to moderate lightning talks, as well as to give one.</p>
-
-<p>Separately, our work with Docker, ClusterHQ, and Weaveworks on Docker plugins was announced at the keynote. They gave the three of us a session to introduce Docker plugins in more detail. ClusterHQ has <a href="https://clusterhq.com/2015/07/01/docker-plugins-complete-the-puzzle/">a nice write-up</a>, though The New Stack also has <a href="http://thenewstack.io/the-real-docker-ecosystem-launches-with-plugins/">a good write-up</a> as industry press. I was just pleasantly surprised to see the Glider Labs logo in Solomon&rsquo;s keynote. (However, I&rsquo;m not sure why Mesosphere is mentioned at all.)</p>
-
-<p><img alt="Conway's Life" src="/images/dockercon2015.jpg" /></p>
-
-<p>Besides that it was really great to hear from so many people using Glider Labs projects. Our Alpine image is definitely a hit. We saw a number of Docker employees using it in their demos. Talking to vendors at the booths, it seemed 90% of them were using a Glider Labs project of some kind, whether Alpine, Registrator, or Logspout. This is especially exciting because these projects are just the beginning.</p>
-
-<p>The lightning talks were also fun. I used my lightning talk as an excuse to put together a proof of concept for a project now called Envy. It&rsquo;s a sort of development environment manager, re-envisioning the idea of development environments with containers. I believe somebody suggested it could be a Vagrant killer? I gave the demo several times at DockerCon and it was quite well received.</p>
-
-<p>Definitely looking forward to next year!</p>
-
-<iframe src="https://player.vimeo.com/video/131329120" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-    </article>
-
-    <a href="/blog/2015/07/20/dockercon-2015-happened/#disqus_thread">Comments</a>
-    <br /><br />
-  </div>
-</div>
-</div>
-</section>
-<section >
-<div class="container">
-<div class="row">
-  <div class="col-lg-9">
-    <article>
       <h1><a href="/blog/2015/04/29/build-simple-systems-to-build-good-systems/">Build simple systems to build good systems</a></h1>
       <p class="sub">Jeff Lindsay wrote this on
         April
@@ -198,81 +164,6 @@ known.</p>
 </div>
 </div>
 </section>
-<section  class="alternate">
-<div class="container">
-<div class="row">
-  <div class="col-lg-9">
-    <article>
-      <h1><a href="/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/">Weave Sponsors Glider Labs Service Discovery Projects</a></h1>
-      <p class="sub">Jeff Lindsay wrote this on
-        April
-        22,
-        2015</p>
-
-      <p>Today we&rsquo;re happy to introduce <a href="http://weave.works/">Weaveworks</a>, authors of <a href="https://github.com/weaveworks/weave">Weave</a>, as our newest sponsor. This sponsorship will most immediately support development and increased releases of <a href="https://github.com/gliderlabs/registrator">Registrator</a>, our Docker service discovery bridge. It also enables us to release a few new projects in this space over the next couple months.</p>
-
-<p>This six month sponsorship not only supports our work, but the joint effort across vendors to help Docker become more extensible. Along with Weaveworks, we&rsquo;re among a few working with Docker to help design a plugin system, initially allowing basic extension points around networking and volumes.</p>
-
-<p>It also means we&rsquo;ll be exploring integration with various Weave components, such as Registrator with <a href="https://github.com/weaveworks/weave/tree/master/weavedns">WeaveDNS</a>. We&rsquo;ll also be sharing some of the use cases with current and future Weave services for Docker software networking.</p>
-
-<p>Besides our consulting and system integration services, Glider Labs is an independent systems R&amp;D lab. Our open source work towards unraveling the <a href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/">modern systems mess</a> is made possible by sponsorships like this. If your organization is interested in supporting our work the way Weaveworks has, please <a href="mailto:team+sponsor@gliderlabs.com">let us know</a>.</p>
-
-
-    </article>
-
-    <a href="/blog/2015/04/22/weave-sponsors-glider-labs-service-discovery-projects/#disqus_thread">Comments</a>
-    <br /><br />
-  </div>
-</div>
-</div>
-</section>
-<section >
-<div class="container">
-<div class="row">
-  <div class="col-lg-9">
-    <article>
-      <h1><a href="/blog/2015/04/14/docker-events-explained/">Docker Events Explained</a></h1>
-      <p class="sub">Matt Good wrote this on
-        April
-        14,
-        2015</p>
-
-      <p>One of the fantastic features of the Docker platform is the events API. This enables tools like <a href="https://github.com/gliderlabs/registrator">Registrator</a> and <a href="https://github.com/gliderlabs/logspout">Logspout</a> to listen for container events like starting and stopping, then act on them.</p>
-
-<p>The <a href="https://docs.docker.com/reference/api/docker_remote_api_v1.17/#monitor-dockers-events">Docker API documentation</a> provides a list of the available events, but does not include much detail on what they mean and when they will occur. Since many of our tools depend on the events API, we&rsquo;ve put together a chart illustrating the events triggered throughout the lifecycle of a Docker container (as of Docker version 1.5 / API version 1.17):</p>
-
-<p><a href="/images/docker_events.png"><img width="650px" height="371px" alt="Docker events diagram" src="/images/docker_events.png" title="Container-related Docker events" /></a></p>
-
-<p>A few container-related events are not included in this illustration since they are not affected by container state:</p>
-
-<ul>
-<li><strong>export</strong> emitted by <code>docker export</code></li>
-<li><strong>exec_create</strong> emitted by <code>docker exec</code></li>
-<li><strong>exec_start</strong> also emitted by <code>docker exec</code> after <strong>exec_create</strong></li>
-</ul>
-
-<p>There are also several events not in this diagram that are related to Docker images rather than containers:</p>
-
-<ul>
-<li><strong>import</strong> emitted by <code>docker import</code></li>
-<li><strong>pull</strong> emitted by <code>docker pull</code></li>
-<li><strong>untag</strong> emitted by <code>docker rmi</code></li>
-<li><strong>delete</strong> emitted by <code>docker rmi</code></li>
-</ul>
-
-<p>Running <code>docker rmi</code> emits an <code>untag</code> event when removing an image tag name. The <code>rmi</code> command may also emit <code>delete</code> events for any image IDs deleted, either by deleting an image by ID directly, or deleting the last tag referring to it.</p>
-
-<p>We encourage more people to take advantage of the Docker events API, and we hope this diagram is useful. The Docker team is <a href="https://github.com/docker/docker/issues/12164">considering including this diagram in the documentation</a>.</p>
-
-
-    </article>
-
-    <a href="/blog/2015/04/14/docker-events-explained/#disqus_thread">Comments</a>
-    <br /><br />
-  </div>
-</div>
-</div>
-</section>
 
 
 <section class="alternate">
@@ -281,8 +172,8 @@ known.</p>
     <div class="col-lg-9">
       <ul class="pager article">
 
-        <li class="previous">
-          <a href="/blog/page2/">&larr; Older</a>
+        <li class="previous disabled">
+          <a href="#">&larr; Older</a>
         </li>
 
         <li class="next disabled">
