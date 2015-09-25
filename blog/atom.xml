@@ -5,11 +5,37 @@
   <id>http://gliderlabs.com/blog</id>
   <link href="http://gliderlabs.com/blog"/>
   <link href="http://gliderlabs.com/blog/atom.xml" rel="self"/>
-  <updated>2015-08-10T13:55:00-05:00</updated>
+  <updated>2015-09-23T14:20:00-05:00</updated>
   <author>
     <name>Glider Labs</name>
     <email>team@gliderlabs.com</email>
   </author>
+  <entry>
+    <title>Fastly CDN speeds up Alpine package installs</title>
+    <link rel="alternate" href="http://gliderlabs.com/blog/2015/09/23/fastly-cdn-speeds-up-alpine-package-installs/"/>
+    <id>http://gliderlabs.com/blog/2015/09/23/fastly-cdn-speeds-up-alpine-package-installs/</id>
+    <published>2015-09-23T14:20:00-05:00</published>
+    <updated>2015-09-24T22:23:41-05:00</updated>
+    <author>
+      <name>Andy Shinn</name>
+    </author>
+    <content type="html">&lt;p&gt;We love fast things. Fast servers, fast cars, fast food. It is one of the reasons we make heavy use of &lt;a href="http://www.alpinelinux.org/"&gt;Alpine Linux&lt;/a&gt; and maintain a &lt;a href="https://hub.docker.com/r/gliderlabs/alpine/"&gt;reputable Alpine Linux Docker image&lt;/a&gt; (you do know that &lt;a href="https://github.com/docker-library/official-images/blob/master/library/alpine"&gt;Glider Labs also maintains the official Alpine Linux image&lt;/a&gt;, right?). It is small, lean, and very quick to install packages from &lt;a href="http://alpine.gliderlabs.com/alpine/v3.2/main/x86_64/"&gt;its very vast package index&lt;/a&gt;. But could it be quicker?&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Pulling!" src="/images/pulling.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Early in our Alpine Linux love affair we realized that package installation timeouts and mirror distance played a role in our &lt;a href="https://github.com/gliderlabs/docker-alpine/issues/15"&gt;build reliability&lt;/a&gt; and speed. Early tests showed that by just switching to a closer package mirror we could speed up image building nearly two-fold. As the &lt;a href="https://github.com/gliderlabs/docker-alpine/issues/57"&gt;image is used worldwide&lt;/a&gt;, we needed a solution which was a little more feasible than figuring out your closest mirror. Enter the &lt;a href="https://www.fastly.com/"&gt;Fastly CDN&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.fastly.com/"&gt;&lt;img alt="Fastly" src="/images/fastly.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We &lt;a href="https://github.com/gliderlabs/docker-alpine/pull/4"&gt;reached out to a couple CDN providers&lt;/a&gt; for sponsorship and Fastly gladly offered to support such a cause. A couple quick emails, some light configuration, and we were up and running! Fastly now sponsors an Alpine Linux package CDN at http://alpine.gliderlabs.com/. The service is backed by Varnish underneath and gives you access to the very powerful &lt;a href="https://docs.fastly.com/guides/vcl/"&gt;Varnish Configuraton Language&lt;/a&gt;. This allows us to do fancy things like routing based on geo-location, load balancing between origins, and automatic removal of origins when they become unhealthy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Faster with CDN" src="/images/cdn_speedup.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Fastly CDN is now the default package repository in the &lt;code&gt;gliderlabs/alpine&lt;/code&gt; image and may also be used someday in the official &lt;code&gt;alpine&lt;/code&gt; image as well. The package repository is not limited to our image or even Docker in any way. Feel free to use it for any Alpine Linux setup!&lt;/p&gt;
+
+&lt;p&gt;A big thank you to Fastly and their excellent team for helping us get this sponsorship going. They &lt;a href="https://www.fastly.com/about/open-source"&gt;truly care about open source work&lt;/a&gt; and we greatly appreciate it.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Registrator v6</title>
     <link rel="alternate" href="http://gliderlabs.com/blog/2015/08/10/registrator-v6/"/>
@@ -205,43 +231,6 @@ known.&lt;/p&gt;
 &lt;p&gt;It also means we&amp;rsquo;ll be exploring integration with various Weave components, such as Registrator with &lt;a href="https://github.com/weaveworks/weave/tree/master/weavedns"&gt;WeaveDNS&lt;/a&gt;. We&amp;rsquo;ll also be sharing some of the use cases with current and future Weave services for Docker software networking.&lt;/p&gt;
 
 &lt;p&gt;Besides our consulting and system integration services, Glider Labs is an independent systems R&amp;amp;D lab. Our open source work towards unraveling the &lt;a href="http://gliderlabs.com/blog/2015/03/24/the-modern-systems-software-mess/"&gt;modern systems mess&lt;/a&gt; is made possible by sponsorships like this. If your organization is interested in supporting our work the way Weaveworks has, please &lt;a href="mailto:team+sponsor@gliderlabs.com"&gt;let us know&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Docker Events Explained</title>
-    <link rel="alternate" href="http://gliderlabs.com/blog/2015/04/14/docker-events-explained/"/>
-    <id>http://gliderlabs.com/blog/2015/04/14/docker-events-explained/</id>
-    <published>2015-04-14T18:48:00-05:00</published>
-    <updated>2015-08-10T13:23:07-05:00</updated>
-    <author>
-      <name>Matt Good</name>
-    </author>
-    <content type="html">&lt;p&gt;One of the fantastic features of the Docker platform is the events API. This enables tools like &lt;a href="https://github.com/gliderlabs/registrator"&gt;Registrator&lt;/a&gt; and &lt;a href="https://github.com/gliderlabs/logspout"&gt;Logspout&lt;/a&gt; to listen for container events like starting and stopping, then act on them.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href="https://docs.docker.com/reference/api/docker_remote_api_v1.17/#monitor-dockers-events"&gt;Docker API documentation&lt;/a&gt; provides a list of the available events, but does not include much detail on what they mean and when they will occur. Since many of our tools depend on the events API, we&amp;rsquo;ve put together a chart illustrating the events triggered throughout the lifecycle of a Docker container (as of Docker version 1.5 / API version 1.17):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="/images/docker_events.png"&gt;&lt;img width="650px" height="371px" alt="Docker events diagram" src="/images/docker_events.png" title="Container-related Docker events" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A few container-related events are not included in this illustration since they are not affected by container state:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;export&lt;/strong&gt; emitted by &lt;code&gt;docker export&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;exec_create&lt;/strong&gt; emitted by &lt;code&gt;docker exec&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;exec_start&lt;/strong&gt; also emitted by &lt;code&gt;docker exec&lt;/code&gt; after &lt;strong&gt;exec_create&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are also several events not in this diagram that are related to Docker images rather than containers:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;import&lt;/strong&gt; emitted by &lt;code&gt;docker import&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;pull&lt;/strong&gt; emitted by &lt;code&gt;docker pull&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;untag&lt;/strong&gt; emitted by &lt;code&gt;docker rmi&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;delete&lt;/strong&gt; emitted by &lt;code&gt;docker rmi&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Running &lt;code&gt;docker rmi&lt;/code&gt; emits an &lt;code&gt;untag&lt;/code&gt; event when removing an image tag name. The &lt;code&gt;rmi&lt;/code&gt; command may also emit &lt;code&gt;delete&lt;/code&gt; events for any image IDs deleted, either by deleting an image by ID directly, or deleting the last tag referring to it.&lt;/p&gt;
-
-&lt;p&gt;We encourage more people to take advantage of the Docker events API, and we hope this diagram is useful. The Docker team is &lt;a href="https://github.com/docker/docker/issues/12164"&gt;considering including this diagram in the documentation&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
